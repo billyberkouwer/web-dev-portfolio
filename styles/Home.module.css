@@ -26,12 +26,12 @@
 }
 
 .rotTextContainer1, .rotTextContainer2 {
-  width: 75%;
-  padding: 0 10% 0 20%;
+  width: 100%;
+  padding: 0 0 0 50%; /*padding to center text*/
   height: 100%;
 }
 
-.rotTextContainer1 ul, .rotTextContainer2 ul {
+.toplist1, .bottomlist1, .bottomlist2 {
   position: absolute;
   list-style-type: none;
   margin: .1em;
@@ -39,24 +39,26 @@
   font-size: 40px;
 }
 
-.rotTextContainer1 ul {
+.rotTextContainer1, .toplist1 {
+  position: absolute;
   bottom: 0;
 }
 
-.rotTextContainer2 ul {
-  top: 0;
+.bottomlist2 {
+  top: 200px;
+  left: calc(50% + 230px);
 }
 
 .half1 {
-  transform-origin: bottom center;
+  transform-origin: bottom right;
 }
 
 .half2 {
-  transform-origin: top center;
+  transform-origin: top right;
 }
 
 .half1, .half2 {
   height: 100%;
   width: 200%;
-  transform: rotate(-20deg) translate(-10%, -90%);
+  transform: translate(-50%, -90%) /*first val is position for div x direction, second val is y direction*/ rotate(-15deg);
 }

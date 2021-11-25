@@ -20,7 +20,7 @@ export default function Home() {
       <div className={reusable.section} style={{overflow: 'hidden'}}>
           <div className={`${styles.half1} ${styles.rotation}`}>
             <div className={styles.rotTextContainer1}>
-              <ul className={reusable.fontColDark}>
+              <ul className={`${reusable.fontColDark} ${styles.toplist1}`}>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -31,11 +31,15 @@ export default function Home() {
           </div>
           <div className={`${styles.half2} ${reusable.darkBg} ${styles.rotation}`}>
             <div className={styles.rotTextContainer2}>
-            <ul className={reusable.fontColLight}>
+              <ul className={`${reusable.fontColLight} ${styles.bottomlist1}`}>
                 <li>Figma</li>
                 <li>Adobe Photoshop</li>
                 <li>Adobe Illustrator</li>
                 <li>Adobe InDesign</li>
+              </ul>
+              <ul className={`${reusable.fontColLight} ${styles.bottomlist2}`}>
+                <li>Blender (3D)</li>
+                <li>Da Vinci Resolve (Video)</li>
               </ul>
             </div>
           </div>
