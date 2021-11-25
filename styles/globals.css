@@ -1,9 +1,33 @@
+@font-face {
+  font-family: Syne;
+  src: url('./fonts/Syne/Syne-Bold.woff') format("woff"), url('./fonts/Syne/Syne-Bold.woff') format("woff2");
+  font-style: bold;
+}
+
+@font-face {
+  font-family: Syne;
+  src: url('./fonts/Syne/Syne-Regular.woff') format("woff"), url('./fonts/Syne/Syne-Regular.woff') format("woff2");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Playfair Display;
+  src: url('./fonts/Playfair-Display/PlayfairDisplay-Italic.ttf') format("truetype");
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+h1 {
+  font-family: Syne;
+}
+
+h2 {
+  font-family: Playfair Display;
+  font-weight: 300;
 }
 
 a {

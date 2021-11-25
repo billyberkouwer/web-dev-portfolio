@@ -1,0 +1,16 @@
+.navContainer {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.navContainer a {
+    font-size: 30px;
+    font-family: Syne;
+    font-style: normal;
+    margin: 0 30px;
+}

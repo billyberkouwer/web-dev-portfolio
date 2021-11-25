@@ -1,0 +1,31 @@
+.globalContainer {
+    height: 100%;
+    width: 100%;
+}
+  
+.section {
+    width: 100%;
+    height: 100vh;
+}
+
+.darkBg {
+    background-color: #272727;
+}
+
+.lightBg {
+    background-color: #E9E9E9;
+}
+
+.fontColDark {
+    color: #272727;
+}
+
+.fontColLight {
+    color: #E9E9E9;
+}
+
+.centralised {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
