@@ -6,8 +6,7 @@
 
 @font-face {
   font-family: Syne;
-  src: url('./fonts/Syne/Syne-Regular.woff') format("woff"), url('./fonts/Syne/Syne-Regular.woff') format("woff2");
-  font-style: normal;
+  src: url('./fonts/Syne/Syne-Bold.woff') format("woff");
 }
 
 @font-face {
@@ -23,11 +22,17 @@ body {
 
 h1 {
   font-family: Syne;
+  font-stretch: ultra-expanded;
 }
 
 h2 {
   font-family: Playfair Display;
-  font-weight: 300;
+  font-weight: 100;
+}
+
+h3 {
+  font-family: Syne;
+  font-stretch: ultra-expanded;
 }
 
 a {

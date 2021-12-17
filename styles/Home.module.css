@@ -5,21 +5,20 @@
 
 .pageTitle {
   display: flex;
-  width: 80vw;
-  height: 90vh;
+  width: 75vw;
   justify-content: center;
   flex-direction: column;
 }
 
 .pageTitle h1 {
-  font-size: 200px;
+  font-size: 160px;
   line-height: .75em;
   letter-spacing: -.05em;
   margin: 0;
 }
 
 .pageTitle h2 {
-  font-size: 120px;
+  font-size: 100px;
   line-height: .75em;
   letter-spacing: -.05em;
   margin: 0;
@@ -27,38 +26,131 @@
 
 .rotTextContainer1, .rotTextContainer2 {
   width: 100%;
-  padding: 0 0 0 50%; /*padding to center text*/
   height: 100%;
 }
 
-.toplist1, .bottomlist1, .bottomlist2 {
+.toplist1, .toplist2, .toplist3, .bottomlist1, .bottomlist2 {
   position: absolute;
   list-style-type: none;
   margin: .1em;
   font-family: Big Shoulders;
-  font-size: 40px;
+  font-size: 30px;
+  line-height: 1.05em;
+  left: 25%;
 }
 
-.rotTextContainer1, .toplist1 {
+.rotTextContainer1, .rotTextContainer2, .toplist1, .toplist2, .toplist3 {
   position: absolute;
   bottom: 0;
 }
 
 .bottomlist2 {
-  top: 200px;
-  left: calc(50% + 230px);
+  top: 4.5em;
+  left: calc(25% + 5.75em);
+}
+
+.rotTextContainer1 h3, .rotTextContainer2 h3 {
+  position: absolute;
+  margin: 0;
+  font-size: 60px;
+  right: 30%;
+}
+
+.rotTextContainer1 h3 {
+  bottom: 0;
+}
+
+.rotTextContainer2 h3 {
+  top: 0;
+}
+
+.toplist2 {
+  bottom: 5.5em;
+  left: calc(25% + 4em);
+}
+
+.toplist3 {
+  bottom: 5.5em;
+  left: calc(25% + 9em)
 }
 
 .half1 {
-  transform-origin: bottom right;
+  transform-origin: bottom center;
 }
 
 .half2 {
-  transform-origin: top right;
+  transform-origin: top center;
 }
 
 .half1, .half2 {
   height: 100%;
   width: 200%;
-  transform: translate(-50%, -90%) /*first val is position for div x direction, second val is y direction*/ rotate(-15deg);
+  padding: 0 5vw;
+  transform: translate(-25%, -50%) /*first val = x, second val = y*/ rotate(-15deg);
+}
+
+/*----- MEDIA QUERIES -----*/
+@media screen and (max-width: 1300px) {
+  .pageTitle h1 {
+    font-size: 150px;
+  }
+
+  .pageTitle h2 {
+    font-size: 85px;
+  }
+
+  .rotTextContainer1 h3, .rotTextContainer2 h3 {
+    font-size: 50px;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .pageTitle h1 {
+    font-size: 100px;
+  }
+
+  .pageTitle h2 {
+    font-size: 65px;
+  }
+  
+  .toplist1, .toplist2, .toplist3, .bottomlist1, .bottomlist2 {
+    font-size: 20px;
+  }
+
+  .rotTextContainer1 h3, .rotTextContainer2 h3 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .pageTitle h1 {
+    font-size: 75px;
+  }
+
+  .pageTitle h2 {
+    font-size: 45px;
+  }
+
+  .toplist1, .toplist2, .toplist3, .bottomlist1, .bottomlist2 {
+    font-size: 15px;
+  }
+
+  .rotTextContainer1 h3, .rotTextContainer2 h3 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .pageTitle h1 {
+    font-size: 50px;
+  }
+
+  .pageTitle h2 {
+    font-size: 35px;
+  }
+
+  .toplist1, .toplist2, .toplist3, .bottomlist1, .bottomlist2 {
+    font-size: 12px;
+  }
 }

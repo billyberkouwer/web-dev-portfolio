@@ -20,6 +20,7 @@ export default function Home() {
       <div className={reusable.section} style={{overflow: 'hidden'}}>
           <div className={`${styles.half1} ${styles.rotation}`}>
             <div className={styles.rotTextContainer1}>
+              <h3 className={`${reusable.fontColDark}`}>Web Development Skills</h3>
               <ul className={`${reusable.fontColDark} ${styles.toplist1}`}>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -27,22 +28,38 @@ export default function Home() {
                 <li>React.js</li>
                 <li>Three.js</li>
               </ul>
+              <ul className={`${reusable.fontColDark} ${styles.toplist2}`}>
+                <li>SASS</li>
+                <li>Bootstrap</li>
+                <li>GSAP</li>
+                <li>Swiper</li>
+                <li>JSON</li>
+              </ul>
+              <ul className={`${reusable.fontColDark} ${styles.toplist3}`}>
+                <li>Trello</li>
+                <li>Netlify</li>
+                <li>VS Code</li>
+              </ul>
             </div>
           </div>
-          <div className={`${styles.half2} ${reusable.darkBg} ${styles.rotation}`}>
+          <div className={`${styles.half2} ${reusable.darkBg} ${styles.rotation} ${reusable.fontColLight}`}>
             <div className={styles.rotTextContainer2}>
-              <ul className={`${reusable.fontColLight} ${styles.bottomlist1}`}>
+            <h3>Visual Design Skills</h3>
+              <ul className={`${styles.bottomlist1}`}>
                 <li>Figma</li>
                 <li>Adobe Photoshop</li>
                 <li>Adobe Illustrator</li>
                 <li>Adobe InDesign</li>
               </ul>
-              <ul className={`${reusable.fontColLight} ${styles.bottomlist2}`}>
+              <ul className={`${styles.bottomlist2}`}>
                 <li>Blender (3D)</li>
                 <li>Da Vinci Resolve (Video)</li>
               </ul>
             </div>
           </div>
+      </div>
+      <div className={reusable.section}>
+        
       </div>
     </div>
   )
