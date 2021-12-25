@@ -58,8 +58,14 @@ export default function Home() {
             </div>
           </div>
       </div>
-      <div className={reusable.section}>
-        
+      <div className={`${styles.aboutSection} ${reusable.section} ${reusable.darkBg}`}>
+          <div className={`${reusable.fontColLight}`}>
+            <p>Phasellus lacinia risus vel lectus congue, quis fringilla diam vestibulum. Integer commodo commodo tortor id sagittis. Fusce lacinia tellus id ex condimentum posuere. Quisque pellentesque diam enim. Nunc ac est ac nisl dapibus semper. Quisque non quam non ligula dapibus egestas. Nunc luctus ultricies nunc, ut porttitor odio feugiat in. Quisque luctus est in diam sagittis aliquet. Nam condimentum sem vitae risus gravida hendrerit. Fusce vitae odio non magna aliquam ultricies a at dui. Pellentesque fringilla blandit ultrices. Etiam scelerisque facilisis lacus, nec porta eros malesuada vitae. Praesent libero ligula, dictum et maximus vel, faucibus et ligula. Curabitur eu purus quis mi porttitor rhoncus sed nec risus. Aliquam a euismod turpis. Aliquam tincidunt massa eros, id interdum nisi pulvinar ut. Nullam venenatis interdum nibh, sed scelerisque magna consequat sit amet.</p>
+          </div>
+          <div className={``}>
+            <button>See My Projects</button>
+            <button>Hire Me</button>
+          </div>
       </div>
     </div>
   )
