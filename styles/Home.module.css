@@ -174,7 +174,7 @@
   }
 
   .toplist1, .toplist2, .toplist3, .bottomlist1, .bottomlist2 {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .rotTextContainer1 h3, .rotTextContainer2 h3 {
@@ -182,7 +182,7 @@
   }
 }
 
-@media screen and (max-width: 485px) {
+@media screen and (max-width: 585px) {
   .pageTitle h1 {
     font-size: 50px;
   }
@@ -192,6 +192,10 @@
   }
 
   .toplist1, .toplist2, .toplist3, .bottomlist1, .bottomlist2 {
-    font-size: 12px;
+    font-size: 15px;
+  }
+
+  .rotTextContainer1 h3, .rotTextContainer2 h3 {
+    font-size: 20px;
   }
 }
