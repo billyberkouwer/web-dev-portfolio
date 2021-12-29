@@ -1,14 +1,18 @@
 import styles from '../styles/Home.module.css'
 import reusable from '../styles/reusable.module.css'
 import Navbar from '../components/Navbar'
+import homeData from '../pages/api/homeData.json'
 
-const navCol = '#e9e9e9';
-const portfolioName = 'Billy Myles-Berkouwer';
-const subtitle = 'Front-End Web Developer and Visual Designer';
-const webDevSkills = [['HTML', 'CSS', 'JavaScript', 'React.js', 'Three.js'], ['SASS', 'GSAP', 'Swiper', 'JSON'], ['Trello', 'Netlify', 'VS Code']];
-const designSkills = [['Figma', 'Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign'], ['Blender (3D)', 'Da Vinci Resolve (Video)']];
-const bio = `I combine the latest website development practices with expertise in visual design and asset production. \n Working as a visual artist and designer led me to discover my passion for website development. Since starting my professional practice in 2019, I have worked on a variety of web projects for individuals and businesses as both an engineer and a designer. \n As a front-end developer, I write clean and performant code to develop websites and apps. I also design user interfaces, which has enabled me to take on projects that require both design and development. Whether I am designing and developing, or working from a given UI design, I produce my websites and apps with careful attention to details and with scalability in mind. \n In addition to my web development practice, I have worked on creative and commercial projects as a visual artist, 3D designer, video producer and photographer. My visual art has been exhibited internationally and my commercial photography has been reproduced in print editions by international gallery, Lumas.`
+const navCol = homeData.navCol;
+const portfolioName = homeData.title;
+const subtitle = homeData.subtitle;
+const webDevSkills = homeData.skills1;
+const designSkills = homeData.skills2;
+const bio = homeData.bio;
 const bioText = bio.split('\n').map((item, i) => <p key={i} className={`${styles.bioText} ${reusable.fontColLight}`}>{item}</p>);
+const socialIcons = homeData.socials.map(arr => 
+  <button key={arr} className={styles.socialButton}>{arr[1]}</button>
+)
 
 export default function Home() {
   return (
@@ -55,11 +59,7 @@ export default function Home() {
             <button className={styles.aboutButton}>Contact Me</button>
           </div>
           <div className={styles.socialsContainer}>
-            <button className={styles.socialButton}></button>
-            <button className={styles.socialButton}></button>
-            <button className={styles.socialButton}></button>
-            <button className={styles.socialButton}></button>
-            <button className={styles.socialButton}></button>
+            {socialIcons}
           </div>
           <p className={styles.watermark}>This site was designed in Figma and developed using Next.js. Title font courtesy of Pangram Pangram.</p>
         </div>
