@@ -2,8 +2,10 @@ import reusable from '../styles/reusable.module.css'
 import Navbar from '../components/Navbar'
 import themeData from './api/themeData.json'
 import styles from '../styles/contact.module.css'
+import socials from '../components/socialIcons.js'
 
 const navCol = themeData.navColLight;
+const socialIcons = socials;
 
 export default function Contact() {
     return (
@@ -14,8 +16,11 @@ export default function Contact() {
                     <h1>Contact</h1>
                     <div className={reusable.contentContainer}>
                         <div className={styles.firstCol}>
-                            <div className={styles.imageContainer}>
+                            <div>
+                                <div className={styles.imageContainer}>
 
+                                </div>
+                                {socialIcons}
                             </div>
                         </div>
                         <div className={styles.secondCol}>

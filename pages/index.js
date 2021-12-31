@@ -1,6 +1,7 @@
 import styles from '../styles/Home.module.css'
 import reusable from '../styles/reusable.module.css'
 import Navbar from '../components/Navbar'
+import socials from '../components/socialIcons'
 import homeData from '../pages/api/homeData.json'
 import themeData from './api/themeData.json'
 
@@ -11,7 +12,7 @@ const webDevSkills = homeData.skills1;
 const designSkills = homeData.skills2;
 const bio = homeData.bio;
 const bioText = bio.split('\n').map((item, i) => <p key={i} className={`${styles.bioText} ${reusable.fontColLight}`}>{item}</p>);
-const socialIcons = homeData.socials.map(arr => <button key={arr} className={styles.socialButton}>{arr[1]}</button>)
+const socialIcons = socials;
 
 export default function Home() {
   return (
