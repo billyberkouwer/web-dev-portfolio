@@ -1,7 +1,7 @@
 import Navbar from '../components/Navbar';
 import reusable from '../styles/reusable.module.css'
 import styles from '../styles/projects.module.css';
-import projectsData from './api/projects.json'
+import projectsData from './api/projectsData.json'
 
 const navCol = '#272727';
 const mappedProjects = [];
@@ -13,9 +13,9 @@ const generateProjects = () => {
             index++;
             mappedProjects.push(
                 <div className={`${reusable.section} ${reusable.spacedSection} ${reusable.lightBg}`}>
-                    <div className={styles.projectSection}>
+                    <div className={reusable.contentSection}>
                         <h1>{projectsData[i].title}</h1>
-                        <div className={styles.contentContainer}>
+                        <div className={reusable.contentContainer}>
                             <div className={styles.firstCol}>
                                 <p>{projectsData[i].text}</p>
                                 <div className={styles.buttonContainer}>
@@ -34,9 +34,9 @@ const generateProjects = () => {
                 index++;
                 mappedProjects.push(
                     <div className={`${reusable.section} ${reusable.spacedSection} ${reusable.lightBg}`}>
-                        <div className={styles.projectSection}>
+                        <div className={reusable.contentSection}>
                             <h1>{projectsData[i].title}</h1>
-                            <div className={styles.contentContainer}>
+                            <div className={reusable.contentContainer}>
                                 <div className={styles.firstCol}>
                                     <div className={styles.imageContainer}>
                                     </div>

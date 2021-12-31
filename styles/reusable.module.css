@@ -14,6 +14,22 @@
     padding-top: 80px;
 }
 
+.contentSection {
+    height: calc(100% - 80px);
+    padding: 0 10% 5% 10%;
+}
+
+.contentSection h1 {
+    font-size: 60px;
+    letter-spacing: -0.05em;
+}
+
+.contentContainer {
+    display: inline-flex;
+    width: 100%;
+    height: 95%;
+}
+
 .darkBg {
     background-color: #272727;
 }

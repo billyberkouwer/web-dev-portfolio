@@ -54,6 +54,7 @@ p {
 }
 
 button {
+  position: relative;
   font-family: Syne;
   font-size: 25px;
   border-radius: 50px;

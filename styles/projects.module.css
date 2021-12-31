@@ -1,18 +1,3 @@
-.projectSection {
-    height: calc(100% - 80px);
-    padding: 0 10% 5% 10%;
-}
-
-.projectSection h1 {
-    font-size: 60px;
-}
-
-.contentContainer {
-    display: inline-flex;
-    width: 100%;
-    height: 95%;
-}
-
 .firstCol {
     width: 50%;
     height: 100%;
