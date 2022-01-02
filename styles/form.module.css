@@ -1,0 +1,54 @@
+.formContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.formContainer form {
+    position: relative;
+    display: grid;
+    grid-template-rows: [first] 3em [second] 3em [third] 1fr [fourth] auto [end];
+    row-gap: 2%;
+    height: 90%;
+    width: 100%;
+}
+
+#fullname {
+    grid-row: first / second;
+}
+
+#email {
+    grid-row: second / third;
+}
+
+#yourmessage {
+    grid-row: third / fourth;
+}
+
+.formContainer p input, .formContainer p textarea {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    border-bottom: solid 1px #e9e9e9;
+    resize: none;
+    overflow-y: scroll;
+    outline: none;
+    color: #e9e9e9;
+    font-size: 20px;
+    font-family: Big Shoulders;
+    padding-left: 0;
+}
+
+.formContainer p textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.formContainer button {
+    grid-row: fourth / end;
+    align-self: center;
+    width: 5em;
+    height: 2em;
+}

@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import themeData from './api/themeData.json'
 import styles from '../styles/contact.module.css'
 import socials from '../components/socialIcons.js'
+import Form from '../components/form.js'
 
 const navCol = themeData.navColLight;
 const socialIcons = socials;
@@ -13,32 +14,19 @@ export default function Contact() {
             <Navbar col={navCol} />
             <div className={`${reusable.section} ${reusable.darkBg} ${reusable.spacedSection}`}>
                 <div className={`${reusable.contentSection} ${reusable.fontColLight}`}>
-                    <h1>Contact</h1>
+                    <div className={styles.headingContainer}>
+                        <h1>Contact</h1>
+                    </div>
                     <div className={reusable.contentContainer}>
                         <div className={styles.firstCol}>
                             <div>
                                 <div className={styles.imageContainer}>
 
                                 </div>
-                                {socialIcons}
                             </div>
                         </div>
                         <div className={styles.secondCol}>
-                            <div className={styles.formContainer}>
-                                <form name="contact" method="POST">
-                                    <input type="hidden" name="contact-form" value="contact" />
-                                    <p>
-                                        <input type="text" name="fullname" id="fullname" placeholder="Your Name"></input>
-                                    </p>
-                                    <p>
-                                        <input type="email" name="email" id="youremail" placeholder="Your Email"/>
-                                    </p>
-                                    <p>
-                                        <textarea name="message" id="yourmessage" placeholder="Your Message"></textarea>
-                                    </p>
-                                    <button type="submit">Send</button>
-                                </form>
-                            </div>
+                            <Form />
                         </div>
                     </div>
                 </div>

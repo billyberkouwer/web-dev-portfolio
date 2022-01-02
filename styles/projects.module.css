@@ -1,12 +1,25 @@
+.contentContainer {
+    width: 100%;
+    height: 95%;
+    display: grid;
+    grid-template-columns: [first] 50% [second] 50% [end] ;
+}
+
 .firstCol {
-    width: 50%;
+    grid-column: first / second;
+    width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .secondCol {
-    width: 50%;
+    grid-column: second / end;
+    width: 100%;
     height: 100%;
     padding: 0 0 0 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .imageContainer {
@@ -15,13 +28,9 @@
     background-color: darkgray;
 }
 
-.buttonContainer {
-    position: absolute;
-    bottom: 15%;
-}
-
 .contentContainer p {
     text-align: justify;
+    flex-grow: 1;
 }
 
 .buttonContainer button {
