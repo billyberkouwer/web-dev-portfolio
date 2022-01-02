@@ -28,7 +28,14 @@ export default function Home(props) {
   const subtitleRef = useRef(null);
   const skillsTop = useRef(null)
   const skillsSection = useRef(null);
-  const skillsBottom = useRef(null)
+  const skillsBottom = useRef(null);
+  const skill1 = useRef(null)
+  const skill2 = useRef(null)
+  const list1 = useRef(null)
+  const list2 = useRef(null)
+  const list3 = useRef(null)
+  const list4 = useRef(null)
+  const list5 = useRef(null)
 
   useEffect(() => {
     const titles = [title, subtitleRef];
@@ -44,20 +51,9 @@ export default function Home(props) {
           }
         );
     }
-    GSAP.from(
-      skillsTop, {
-        y: -100, 
-          scrollTrigger: {
-            trigger: skillsSection,
-            start: "top bottom",
-            end: 800,
-            scrub:.75,
-          },
-      },
-    )
-    GSAP.from(
-      skillsBottom, {
-        y: 50, 
+    tl.from(
+      [skill1, list3, list2, list1], {
+        y: -100*1.25,
           scrollTrigger: {
             trigger: skillsSection,
             start: 'top bottom',
@@ -65,7 +61,53 @@ export default function Home(props) {
             scrub: .75,
           },
       },
-    );
+    )
+    tl.from(
+      [list1, list2, list3], {
+        opacity: 0,
+        stagger: -.15,
+        scrollTrigger: {
+          trigger: skillsSection,
+          start: 'top bottom',
+          end: 800,
+          scrub: .75,
+        },
+    }
+    )
+    tl.from(
+      [list4, list5], {
+        opacity: 0,
+        stagger: .15,
+        scrollTrigger: {
+          trigger: skillsSection,
+          start: 'top center',
+          scrub: .75,
+          end: 800,
+        },
+    },
+    )
+    tl.from(
+      [skill1, skill2], {
+        opacity: 0,
+        scrollTrigger: {
+          trigger: skillsSection,
+          start: 'top bottom',
+          scrub: .75,
+          end: 800,
+        },
+      }
+    )
+    tl.from(
+        [skill2, list4, list5], {
+          y: 60*1.25,
+            scrollTrigger: {
+              trigger: skillsSection,
+              start: 'top bottom',
+              end: 800,
+              scrub: .75,
+            },
+        },
+      );
     console.log(titles)
   }, [])
 
@@ -81,25 +123,25 @@ export default function Home(props) {
       <div ref={e => skillsSection = e} className={reusable.section} style={{overflow: 'hidden'}}>
           <div ref={e => skillsTop = e} className={`${styles.half1} ${styles.rotation}`}>
             <div className={styles.rotTextContainer1}>
-              <h3 className={`${reusable.fontColDark}`}>Web Development Skills</h3>
-              <ul className={`${reusable.fontColDark} ${styles.toplist1}`}>
+              <h3 ref={e => skill1 = e} className={`${reusable.fontColDark}`}>Web Development Skills</h3>
+              <ul ref={e => list1 = e} className={`${reusable.fontColDark} ${styles.toplist1}`}>
                 {webDevSkills[0].map(skill => <li key={skill}> {skill} </li>)}
               </ul>
-              <ul className={`${reusable.fontColDark} ${styles.toplist2}`}>
+              <ul ref={e => list2 = e} className={`${reusable.fontColDark} ${styles.toplist2}`}>
                 {webDevSkills[1].map(skill => <li key={skill}> {skill} </li>)}
               </ul>
-              <ul className={`${reusable.fontColDark} ${styles.toplist3}`}>
+              <ul ref={e => list3 = e} className={`${reusable.fontColDark} ${styles.toplist3}`}>
                 {webDevSkills[2].map(skill => <li key={skill}> {skill} </li>)}
               </ul>
             </div>
           </div>
           <div ref={e => skillsBottom = e} className={`${styles.half2} ${reusable.darkBg} ${styles.rotation} ${reusable.fontColLight}`}>
             <div className={styles.rotTextContainer2}>
-            <h3>Visual Design Skills</h3>
-              <ul className={`${styles.bottomlist1}`}>
+            <h3 ref={e => skill2 = e}>Visual Design Skills</h3>
+              <ul ref={e => list4 = e} className={`${styles.bottomlist1}`}>
                 {designSkills[0].map(skill => <li key={skill}> {skill} </li>)}
               </ul>
-              <ul className={`${styles.bottomlist2}`}>
+              <ul ref={e => list5 = e} className={`${styles.bottomlist2}`}>
                 {designSkills[1].map(skill => <li key={skill}> {skill} </li>)}
               </ul>
             </div>

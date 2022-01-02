@@ -2,9 +2,9 @@
     "title": "Billy Myles-Berkouwer",
     "subtitle": "Front-End Web Developer and Visual Designer",
     "skills1": [
-        ["HTML", "CSS", "JavaScript", "React.js", "Three.js"], 
-        ["SASS", "GSAP", "Swiper", "JSON"], 
-        ["Trello", "Netlify", "VS Code"]
+        ["HTML", "CSS", "JavaScript", "React.js", "Next.js"], 
+        ["Three.js", "SASS", "GSAP", "Swiper"], 
+        ["JSON", "Trello", "Netlify", "VS Code"]
     ],
     "skills2": [
         ["Figma", "Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign"], 
