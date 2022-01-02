@@ -40,16 +40,16 @@ export default function Home(props) {
   useEffect(() => {
     const titles = [title, subtitleRef];
     if (initialOpen) {
-        tl.from(
-          titles,
-          {
-            duration: 1,
-            opacity: 0,
-            x: 100,
-            ease: Power3.easeIn,
-            stagger: .5,
-          }
-        );
+      tl.from(
+        titles,
+        {
+          duration: 1,
+          opacity: 0,
+          x: 100,
+          ease: Power3.easeIn,
+          stagger: .5,
+        }
+      );
     }
     tl.from(
       [skill1, list3, list2, list1], {
@@ -61,7 +61,7 @@ export default function Home(props) {
             scrub: .75,
           },
       },
-    )
+    );
     tl.from(
       [list1, list2, list3], {
         opacity: 0,
@@ -72,8 +72,8 @@ export default function Home(props) {
           end: 800,
           scrub: .75,
         },
-    }
-    )
+      }
+    );
     tl.from(
       [list4, list5], {
         opacity: 0,
@@ -84,8 +84,8 @@ export default function Home(props) {
           scrub: .75,
           end: 800,
         },
-    },
-    )
+      },
+    );
     tl.from(
       [skill1, skill2], {
         opacity: 0,
@@ -96,7 +96,7 @@ export default function Home(props) {
           end: 800,
         },
       }
-    )
+    );
     tl.from(
         [skill2, list4, list5], {
           y: 60*1.25,
@@ -108,7 +108,6 @@ export default function Home(props) {
             },
         },
       );
-    console.log(titles)
   }, [])
 
   return (props.fontReady === 0 &&
