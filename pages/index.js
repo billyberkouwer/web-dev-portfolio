@@ -56,9 +56,10 @@ export default function Home(props) {
         y: -100*1.25,
           scrollTrigger: {
             trigger: skillsSection,
-            start: 'top bottom',
+            start: 'top 80%',
             end: 800,
             scrub: .75,
+            markers: {startColor: "green", endColor: "red", fontSize: "12px"},
           },
       },
     );
@@ -68,7 +69,7 @@ export default function Home(props) {
         stagger: -.15,
         scrollTrigger: {
           trigger: skillsSection,
-          start: 'top bottom',
+          start: 'top 80%',
           end: 800,
           scrub: .75,
         },
@@ -80,7 +81,7 @@ export default function Home(props) {
         stagger: .15,
         scrollTrigger: {
           trigger: skillsSection,
-          start: 'top center',
+          start: 'top 80%',
           scrub: .75,
           end: 800,
         },
@@ -91,7 +92,7 @@ export default function Home(props) {
         opacity: 0,
         scrollTrigger: {
           trigger: skillsSection,
-          start: 'top bottom',
+          start: 'top 80%',
           scrub: .75,
           end: 800,
         },
@@ -102,7 +103,7 @@ export default function Home(props) {
           y: 60*1.25,
             scrollTrigger: {
               trigger: skillsSection,
-              start: 'top bottom',
+              start: 'top 80%',
               end: 800,
               scrub: .75,
             },
