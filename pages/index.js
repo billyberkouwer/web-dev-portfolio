@@ -46,7 +46,7 @@ export default function Home(props) {
             duration: 1,
             opacity: 0,
             x: 100,
-            ease: Power3.ease,
+            ease: Power3.easeIn,
             stagger: .5,
           }
         );
