@@ -52,3 +52,9 @@
     width: 5em;
     height: 2em;
 }
+
+@media screen and (max-width: 800px) {
+    .formContainer button {
+        justify-self: center;
+    }
+}

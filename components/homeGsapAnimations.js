@@ -1,5 +1,4 @@
 import { Power3 } from 'gsap';
-import { useRef } from 'react';
 
 export function titleAnimation(tl, initialOpen, title, subtitleRef) {
     const titles = [title, subtitleRef];
@@ -95,10 +94,9 @@ export function aboutAnimation(gsap, aboutSection, bioRef, button1, button2, soc
       stagger: .2,
       scrollTrigger: {
         trigger: aboutSection,
-        start: 'top 30%',
+        start: 'top 20%',
         end: "+=150",
         scrub: .75,
-        markers: {startColor: "green", endColor: "red", fontSize: "12px"},
       },
     }
   )
@@ -113,7 +111,6 @@ export function aboutAnimation(gsap, aboutSection, bioRef, button1, button2, soc
         start: 'top 10%',
         end: "+=10",
         scrub: .75,
-        markers: {startColor: "green", endColor: "red", fontSize: "12px"},
       },
     }
   )

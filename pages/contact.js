@@ -13,11 +13,11 @@ export default function Contact() {
         <div className={reusable.globalContainer}>
             <Navbar col={navCol} />
             <div className={`${reusable.section} ${reusable.darkBg} ${reusable.spacedSection}`}>
-                <div className={`${reusable.contentSection} ${reusable.fontColLight}`}>
+                <div className={`${styles.contentSection} ${reusable.fontColLight}`}>
                     <div className={styles.headingContainer}>
                         <h1>Contact</h1>
                     </div>
-                    <div className={reusable.contentContainer}>
+                    <div className={styles.contentContainer}>
                         <div className={styles.firstCol}>
                             <div>
                                 <div className={styles.imageContainer}>

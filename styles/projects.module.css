@@ -5,6 +5,11 @@
     grid-template-columns: [first] 50% [second] 50% [end];
 }
 
+.projectHeading {
+    font-size: 60px;
+    letter-spacing: -0.05em;
+}
+
 .firstCol {
     grid-column: first / second;
     width: 100%;
@@ -36,3 +41,43 @@
 .buttonContainer button {
     margin: 0 10px 0 0px;
 }
+
+/*----- MEDIA QUERIES -----*/
+@media screen and (max-width: 1300px) {
+  
+  }
+  
+  @media screen and (max-width: 1000px) {
+   
+  }
+  
+  @media screen and (max-width: 800px) {
+    .projectHeading {
+        font-size: 30px;
+        letter-spacing: -0.05em;
+    }
+
+    .contentContainer {
+        grid-template-rows: [first] 50% [second] 50% [end];
+    }
+
+    .firstCol {
+        margin: 10px 0 10px 0;
+        grid-column: first / end;
+        grid-row: second / end;
+    }
+
+    .secondCol {
+        padding: 0;
+        grid-column: first / end;
+        grid-row: first / second;
+    }
+
+    .buttonContainer button a {
+        font-size: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 585px) {
+    
+  }

@@ -192,4 +192,18 @@
   .rotTextContainer1 h3, .rotTextContainer2 h3 {
     font-size: 20px;
   }
+
+  .bioText {
+    font-size: 12px;
+    padding: 0 5% 0 5%;
+  }
+
+  .aboutButton {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .socialsContainer {
+    margin-top: 20px;
+  }
 }

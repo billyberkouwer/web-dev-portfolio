@@ -1,11 +1,10 @@
-import styles from '../styles/Home.module.css'
+import styles from '../styles/home.module.css'
 import reusable from '../styles/reusable.module.css'
 import Navbar from '../components/Navbar'
-import socials from '../components/socialIcons'
 import homeData from '../pages/api/homeData.json'
 import themeData from './api/themeData.json'
 import { useRef, useEffect, useState } from 'react';
-import { aboutAnimation, AnimationVariables, skillsAnimation, titleAnimation } from '../components/gsapAnimations'
+import { aboutAnimation, AnimationVariables, skillsAnimation, titleAnimation } from '../components/homeGsapAnimations'
 import SocialIcons from '../components/socialIcons'
 
 const navCol = themeData.navColLight;
@@ -19,9 +18,9 @@ export default function Home(props) {
 
   const gsap = props.gsap;
   const ScrollTrigger = props.ScrollTrigger;
+  const initialOpen = props.load;
 
   gsap.registerPlugin(ScrollTrigger);
-  const initialOpen = props.load;
 
   const bioText = bio.split('\n').map((item, i) => <p key={i} className={`${styles.bioText} ${reusable.fontColLight}`}>{item}</p>);
 
@@ -86,7 +85,7 @@ export default function Home(props) {
           </div>
       </div>
       <div ref={e => aboutSection = e} className={`${reusable.section} ${reusable.darkBg}`} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-        <div className={styles.aboutContainer}>
+        <div>
           <div ref={e => bioRef = e}>
             {bioText}
           </div>

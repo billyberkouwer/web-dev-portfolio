@@ -28,7 +28,7 @@ export default function Projects(props) {
     const projects = projectsData.map((data, i) => 
             <div ref={el => {sectionRefs.current[i] = el}} key={'div1 ' + i} className={`${reusable.section} ${reusable.spacedSection}`}>
                     <div key={'div2 ' + i} className={reusable.contentSection}>
-                        <h1 key={'project name ' + i} ref={el => {titleRefs.current[i] = el}}>{data.title}</h1>
+                        <h1 key={'project name ' + i} ref={el => {titleRefs.current[i] = el}} className={styles.projectHeading}>{data.title}</h1>
                         <div key={'div3 ' + i} className={styles.contentContainer}>
                             <div key={'div4 ' + i} className={styles.firstCol}>
                                 <p key={'project paragraph ' + i}>{data.text}</p>
