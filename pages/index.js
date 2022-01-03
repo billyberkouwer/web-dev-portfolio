@@ -4,10 +4,11 @@ import Navbar from '../components/Navbar'
 import socials from '../components/socialIcons'
 import homeData from '../pages/api/homeData.json'
 import themeData from './api/themeData.json'
-import GSAP from 'gsap';
-import { Power3 } from 'gsap';
+import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useRef, useEffect, useState } from 'react';
+import { aboutAnimation, AnimationVariables, skillsAnimation, titleAnimation } from '../components/gsapAnimations'
+import SocialIcons from '../components/socialIcons'
 
 const navCol = themeData.navColLight;
 const portfolioName = homeData.title;
@@ -15,100 +16,39 @@ const subtitle = homeData.subtitle;
 const webDevSkills = homeData.skills1;
 const designSkills = homeData.skills2;
 const bio = homeData.bio;
-const bioText = bio.split('\n').map((item, i) => <p key={i} className={`${styles.bioText} ${reusable.fontColLight}`}>{item}</p>);
-const socialIcons = socials;
 
 export default function Home(props) {
 
-  GSAP.registerPlugin(ScrollTrigger);
-
+  gsap.registerPlugin(ScrollTrigger);
   const initialOpen = props.load;
-  let tl = GSAP.timeline();
+
+  const bioText = bio.split('\n').map((item, i) => <p key={i} className={`${styles.bioText} ${reusable.fontColLight}`}>{item}</p>);
+
+  const tl = gsap.timeline();
   const title = useRef(null);
   const subtitleRef = useRef(null);
-  const skillsTop = useRef(null)
+  const skillsTop = useRef(null);
   const skillsSection = useRef(null);
   const skillsBottom = useRef(null);
-  const skill1 = useRef(null)
-  const skill2 = useRef(null)
-  const list1 = useRef(null)
-  const list2 = useRef(null)
-  const list3 = useRef(null)
-  const list4 = useRef(null)
-  const list5 = useRef(null)
+  const skill1 = useRef(null);
+  const skill2 = useRef(null);
+  const list1 = useRef(null);
+  const list2 = useRef(null);
+  const list3 = useRef(null);
+  const list4 = useRef(null);
+  const list5 = useRef(null);
+  const aboutSection = useRef(null);
+  const bioRef = useRef(null);
+  const button1 = useRef(null);
+  const button2 = useRef(null);
+  const socialIconsRef = useRef(null)
+
+  const {socialIcons, socialRefs} = SocialIcons();
 
   useEffect(() => {
-    const titles = [title, subtitleRef];
-    if (initialOpen) {
-      tl.from(
-        titles,
-        {
-          duration: 1,
-          opacity: 0,
-          x: 100,
-          ease: Power3.easeIn,
-          stagger: .5,
-        }
-      );
-    }
-    tl.from(
-      [skill1, list3, list2, list1], {
-        y: -100*1.25,
-          scrollTrigger: {
-            trigger: skillsSection,
-            start: 'top 80%',
-            end: 800,
-            scrub: .75,
-            markers: {startColor: "green", endColor: "red", fontSize: "12px"},
-          },
-      },
-    );
-    tl.from(
-      [list1, list2, list3], {
-        opacity: 0,
-        stagger: -.15,
-        scrollTrigger: {
-          trigger: skillsSection,
-          start: 'top 80%',
-          end: 800,
-          scrub: .75,
-        },
-      }
-    );
-    tl.from(
-      [list4, list5], {
-        opacity: 0,
-        stagger: .15,
-        scrollTrigger: {
-          trigger: skillsSection,
-          start: 'top 80%',
-          scrub: .75,
-          end: 800,
-        },
-      },
-    );
-    tl.from(
-      [skill1, skill2], {
-        opacity: 0,
-        scrollTrigger: {
-          trigger: skillsSection,
-          start: 'top 80%',
-          scrub: .75,
-          end: 800,
-        },
-      }
-    );
-    tl.from(
-        [skill2, list4, list5], {
-          y: 60*1.25,
-            scrollTrigger: {
-              trigger: skillsSection,
-              start: 'top 80%',
-              end: 800,
-              scrub: .75,
-            },
-        },
-      );
+    titleAnimation(tl, initialOpen, title, subtitleRef);
+    skillsAnimation(tl, skill1, list1, list2, list3, list4, list5, skill2, skillsSection);
+    aboutAnimation(gsap, aboutSection, bioRef, button1, button2, socialRefs.current)
   }, [])
 
   return (props.fontReady === 0 &&
@@ -147,14 +87,16 @@ export default function Home(props) {
             </div>
           </div>
       </div>
-      <div className={`${reusable.section} ${reusable.darkBg}`} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+      <div ref={e => aboutSection = e} className={`${reusable.section} ${reusable.darkBg}`} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
         <div className={styles.aboutContainer}>
-          {bioText}
-          <div className={styles.buttonContainer}>
-            <button className={styles.aboutButton}>See Web Projects</button>
-            <button className={styles.aboutButton}>Contact Me</button>
+          <div ref={e => bioRef = e}>
+            {bioText}
           </div>
-          <div className={styles.socialsContainer}>
+          <div className={styles.buttonContainer}>
+            <button ref={e => button1 = e} className={styles.aboutButton}>See Web Projects</button>
+            <button ref={e => button2 = e} className={styles.aboutButton}>Contact Me</button>
+          </div>
+          <div ref={e => socialIconsRef = e}className={styles.socialsContainer}>
             {socialIcons}
           </div>
           <p className={styles.watermark}>This site was designed in Figma and developed using Next.js. Title font courtesy of Pangram Pangram.</p>
