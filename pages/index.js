@@ -28,9 +28,7 @@ export default function Home(props) {
   const tl = gsap.timeline();
   const title = useRef(null);
   const subtitleRef = useRef(null);
-  const skillsTop = useRef(null);
   const skillsSection = useRef(null);
-  const skillsBottom = useRef(null);
   const skill1 = useRef(null);
   const skill2 = useRef(null);
   const list1 = useRef(null);
@@ -42,7 +40,6 @@ export default function Home(props) {
   const bioRef = useRef(null);
   const button1 = useRef(null);
   const button2 = useRef(null);
-  const socialIconsRef = useRef(null)
 
   const {socialIcons, socialRefs} = SocialIcons();
 
@@ -62,7 +59,7 @@ export default function Home(props) {
         </div>
       </div>
       <div ref={e => skillsSection = e} className={reusable.section} style={{overflow: 'hidden'}}>
-          <div ref={e => skillsTop = e} className={`${styles.half1} ${styles.rotation}`}>
+          <div className={`${styles.half1} ${styles.rotation}`}>
             <div className={styles.rotTextContainer1}>
               <h3 ref={e => skill1 = e} className={`${reusable.fontColDark}`}>Web Development Skills</h3>
               <ul ref={e => list1 = e} className={`${reusable.fontColDark} ${styles.toplist1}`}>
@@ -76,7 +73,7 @@ export default function Home(props) {
               </ul>
             </div>
           </div>
-          <div ref={e => skillsBottom = e} className={`${styles.half2} ${reusable.darkBg} ${styles.rotation} ${reusable.fontColLight}`}>
+          <div className={`${styles.half2} ${reusable.darkBg} ${styles.rotation} ${reusable.fontColLight}`}>
             <div className={styles.rotTextContainer2}>
             <h3 ref={e => skill2 = e}>Visual Design Skills</h3>
               <ul ref={e => list4 = e} className={`${styles.bottomlist1}`}>
@@ -97,7 +94,7 @@ export default function Home(props) {
             <button ref={e => button1 = e} className={styles.aboutButton}>See Web Projects</button>
             <button ref={e => button2 = e} className={styles.aboutButton}>Contact Me</button>
           </div>
-          <div ref={e => socialIconsRef = e}className={styles.socialsContainer}>
+          <div className={styles.socialsContainer}>
             {socialIcons}
           </div>
           <p className={styles.watermark}>This site was designed in Figma and developed using Next.js. Title font courtesy of Pangram Pangram.</p>
