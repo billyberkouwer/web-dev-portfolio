@@ -4,14 +4,27 @@ import themeData from './api/themeData.json'
 import styles from '../styles/contact.module.css'
 import socials from '../components/socialIcons.js'
 import Form from '../components/form.js'
+import Head from 'next/head'
+import Preloads from '../components/preload'
+import { motion } from 'framer-motion'
 
 const navCol = themeData.navColLight;
 const socialIcons = socials;
 
 export default function Contact() {
     return (
+        <>
+        <Head>
+            <title>Web Developer and UI Designer - Billy Myles-Berkouwer</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            <Preloads />
+        </Head>
         <div className={reusable.globalContainer}>
             <Navbar col={navCol} />
+            <motion.div 
+            exit={{opacity: 0}}
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}>
             <div className={`${reusable.section} ${reusable.darkBg} ${reusable.spacedSection}`}>
                 <div className={`${styles.contentSection} ${reusable.fontColLight}`}>
                     <div className={styles.headingContainer}>
@@ -31,6 +44,8 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
+            </motion.div>
         </div>
+        </>
     );
 }
