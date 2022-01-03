@@ -1,4 +1,6 @@
 import '../styles/globals.css'
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useState, useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
@@ -17,6 +19,8 @@ function MyApp({ Component, pageProps }) {
     <Component {...pageProps} 
       load={initialLoad} 
       fontReady={fontReady} 
+      gsap={gsap}
+      ScrollTrigger={ScrollTrigger}
     />
   );
 }

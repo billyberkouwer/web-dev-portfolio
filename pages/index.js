@@ -4,8 +4,6 @@ import Navbar from '../components/Navbar'
 import socials from '../components/socialIcons'
 import homeData from '../pages/api/homeData.json'
 import themeData from './api/themeData.json'
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useRef, useEffect, useState } from 'react';
 import { aboutAnimation, AnimationVariables, skillsAnimation, titleAnimation } from '../components/gsapAnimations'
 import SocialIcons from '../components/socialIcons'
@@ -18,6 +16,9 @@ const designSkills = homeData.skills2;
 const bio = homeData.bio;
 
 export default function Home(props) {
+
+  const gsap = props.gsap;
+  const ScrollTrigger = props.ScrollTrigger;
 
   gsap.registerPlugin(ScrollTrigger);
   const initialOpen = props.load;
