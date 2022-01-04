@@ -14,7 +14,6 @@ const CreateProjectsSwiper = (props) => {
         projectSlides.push(
             images.map(image => <SwiperSlide key={image}><Image alt={image} src={image} priority layout="fill" objectFit="cover" /></SwiperSlide>)
         )
-        console.log(projectSlides)
     }   else {
         projectSlides.push(
             images.map(image => <SwiperSlide key={image}><Image alt={image} src={image} layout="fill" objectFit="cover" /></SwiperSlide>)
