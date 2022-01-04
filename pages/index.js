@@ -3,8 +3,8 @@ import reusable from '../styles/reusable.module.css'
 import Navbar from '../components/Navbar'
 import homeData from '../pages/api/homeData.json'
 import themeData from './api/themeData.json'
-import { useRef, useEffect, useState } from 'react';
-import { aboutAnimation, AnimationVariables, skillsAnimation, titleAnimation } from '../components/homeGsapAnimations'
+import { useRef, useEffect } from 'react';
+import { aboutAnimation, skillsAnimation, titleAnimation } from '../components/homeGsapAnimations'
 import SocialIcons from '../components/socialIcons';
 import Head from 'next/head'
 import Preloads from '../components/preload'
@@ -19,10 +19,9 @@ const bio = homeData.bio;
 
 export default function Home(props) {
 
-
   const gsap = props.gsap;
   const ScrollTrigger = props.ScrollTrigger;
-  const initialOpen = props.load;
+  const initialOpen = props.initialLoad;
 
   gsap.registerPlugin(ScrollTrigger);
 

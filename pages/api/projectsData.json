@@ -2,57 +2,49 @@
     {
         "title": "Ocove Studios",
         "text": "Text about Ocove Studios",
-        "images": ["/../public/images/gardens.jpg", "/../public/images/ronaldson.jpg", "/../public/images/shanti-panchal.jpg"],
-        "button1": ["Live", ""],
-        "button2": ["Site Repo", ""]   
+        "images": ["/images/gardens.jpg", "/images/ronaldson.jpg", "/images/shanti-panchal.jpg"],
+        "buttons": [["Live", ""], ["Site Repo", ""]]
     },
     {
         "title": "Chappel Galleries",
         "text": "Chappel Galleries is a long-standing commercial gallery of modern and contemporary art. Throughout 2020 and 2021, I produced a series of five videos for their exhibitions. I recorded, edited, and colour graded the videos with our in-house team. Each video contained an original score, interviews with the artists, and documentation of the gallery and the work on display.",
         "images": [],
-        "button1": ["Winter Show", "http://www.chappelgalleries.co.uk/exhibitions-11/winter-2021/winter-2021.htm"],
-        "button2": ["Ronald Ronaldson", "http://www.chappelgalleries.co.uk/exhibitions-11/ronald-ronaldson-2021/ronald-ronaldson-2021.htm"]     
+        "buttons": [["Winter Show", "http://www.chappelgalleries.co.uk/exhibitions-11/winter-2021/winter-2021.htm"], ["Ronald Ronaldson", "http://www.chappelgalleries.co.uk/exhibitions-11/ronald-ronaldson-2021/ronald-ronaldson-2021.htm"]]
     },
     {
         "title": "Helen Howard, Ceramicist",
         "text": "Helen Howard is a ceramic and drawing artist whose work is inspired by observations of the natural world. I developed Helen’s website, which displays collections of Raku-fired pots, drawings and information about her work.",
-        "images": ["/../public/images/gardens.jpg", "/../public/images/gardens.jpg", "/../public/images/gardens.jpg"],
-        "button1": ["Live", "https://www.helenhowardceramics.co.uk/"],
-        "button2": ""   
+        "images": ["/images/gardens.jpg", "/images/gardens.jpg", "/images/gardens.jpg"],
+        "buttons": [["Live", "https://www.helenhowardceramics.co.uk/"]] 
     },
     {
         "title": "John Hounam, Artist",
         "text": "John Hounam is a visual artist based in Oxford, UK. I developed his website, which displays his varied portfolio of watercolours, paintings, drawings and video work.",
         "images": [],
-        "button1": ["Live", "https://www.johnhounam.com/"],
-        "button2": ""   
+        "buttons": [["Live", "https://www.johnhounam.com/"]]  
     },
     {
         "title": "Isabel Knowland, Artist",
         "text": "Isabel Knowland is a multidisciplinary artist working in sculpture, painting, installation, and printmaking. I designed and developed her website to organise her collections of work and grow her online presence.",
         "images": [],
-        "button1": ["Live", "https://www.isabelknowland.com/"],
-        "button2": ["Repo", "https://github.com/billyberkouwer/isabel-knowland-website.git"]    
+        "buttons": [["Live", "https://www.isabelknowland.com/"], ["Repo", "https://github.com/billyberkouwer/isabel-knowland-website.git"]]    
     },
     {
         "title": "3D Projects",
         "text": "Text about Ocove Studios",
         "images": [],
-        "button1": ["", ""],
-        "button2": ["", ""]    
+        "buttons": [] 
     },
     {
         "title": "Ocove Studios",
         "text": "Text about Ocove Studios",
         "images": [],
-        "button1": ["", ""],
-        "button2": ["", ""]    
+        "buttons": []  
     },
     {
         "title": "Ocove Studios",
         "text": "Text about Ocove Studios",
         "images": [],
-        "button1": ["", ""],
-        "button2": ["", ""]    
+        "buttons": []   
     }
 ]

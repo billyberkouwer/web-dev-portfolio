@@ -1,22 +1,22 @@
 @font-face {
   font-family: Syne;
-  src: url('../public/fonts/Syne/Syne-Bold.woff') format("woff"), url('../public/fonts/Syne/Syne-Bold.woff') format("woff2");
+  src: url('/fonts/Syne/Syne-Bold.woff') format("woff"), url('../public/fonts/Syne/Syne-Bold.woff') format("woff2");
   font-style: bold;
 }
 
 @font-face {
   font-family: Playfair Display;
-  src: url('../public/fonts/Playfair-Display/PlayfairDisplay-Italic.ttf') format("truetype");
+  src: url('/fonts/Playfair-Display/PlayfairDisplay-Italic.ttf') format("truetype");
 }
 
 @font-face {
   font-family: Cormorant;
-  src: url('../public//fonts/Cormorant-garamond/CormorantGaramond-Regular.ttf') format("truetype");
+  src: url('/fonts/Cormorant-garamond/CormorantGaramond-Regular.ttf') format("truetype");
 }
 
 @font-face {
   font-family: Big Shoulders;
-  src: url('../public//fonts/Big-shoulders/BigShouldersText-Regular.ttf') format("truetype");
+  src: url('/fonts/Big-shoulders/BigShouldersText-Regular.ttf') format("truetype");
 }
 
 * {

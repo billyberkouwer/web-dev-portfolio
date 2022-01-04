@@ -9,7 +9,6 @@ import Preloads from '../components/preload'
 import { motion } from 'framer-motion'
 
 const navCol = themeData.navColLight;
-const socialIcons = socials;
 
 export default function Contact() {
     return (

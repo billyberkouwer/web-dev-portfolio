@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <AnimatePresence exitBeforeEnter>
       <Component {...pageProps} 
-        load={initialLoad} 
+        initialLoad={initialLoad}
         gsap={gsap}
         ScrollTrigger={ScrollTrigger}
       />
