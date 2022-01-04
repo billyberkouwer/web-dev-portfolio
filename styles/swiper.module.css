@@ -2,9 +2,5 @@
     position: relative;
     height: 100%;
     width: 100%;
+    background-color: #e9e9e9;
 }
-
-.swiperWrapper {
-    background-color: red;
-}
-

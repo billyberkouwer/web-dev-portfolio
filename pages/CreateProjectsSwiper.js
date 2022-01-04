@@ -1,8 +1,10 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
-import 'swiper/css'
+import { Autoplay, Pagination, EffectCube } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import styles from '../styles/swiper.module.css'
-import { cloneElement } from 'react';
 
 
 const CreateProjectsSwiper = (props) => {
@@ -12,7 +14,7 @@ const CreateProjectsSwiper = (props) => {
     
     if (i === 0) {
         projectSlides.push(
-            images.map(image => <SwiperSlide key={image}><Image alt={image} src={image} priority layout="fill" objectFit="cover" /></SwiperSlide>)
+            images.map(image => <SwiperSlide key={image}><Image alt={image} src={image} layout="fill" priority={true} objectFit="cover" /></SwiperSlide>)
         )
     }   else {
         projectSlides.push(
@@ -23,10 +25,14 @@ const CreateProjectsSwiper = (props) => {
 
     return (
         <Swiper
+        style={{ '--swiper-theme-color': 'darkgreen', '--swiper-navigation-size' : '30px' }}
+        modules={[Autoplay]}
         className={styles.swiperContainer}
+        autoplay={{delay: 7000}}
         spaceBetween={50}
+        loop
+        speed={1000}
         slidesPerView={1}
-        onSlideChange={() => {console.log('slide change')}}
         >
             {projectSlides}
         </Swiper>

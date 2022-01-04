@@ -154,6 +154,13 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .bioText {
+    font-size: 14px;
+    padding: 0 10% 0 10%;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .pageTitle h1 {
     font-size: 75px;

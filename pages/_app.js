@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import 'swiper/css';
 
 function MyApp({ Component, pageProps }) {
 
