@@ -15,7 +15,7 @@
 }
 
 .firstCol {
-    width: 50%;
+    width: 30%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@
 
 
 .secondCol {
-    width: 50%;
+    width: 70%;
     height: 100%;
     margin-left: 40px;
 }
