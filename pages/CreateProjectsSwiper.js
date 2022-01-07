@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import styles from '../styles/swiper.module.css'
+import styles from '../styles/swiper.module.css';
 
 
 const CreateProjectsSwiper = (props) => {
@@ -14,7 +14,7 @@ const CreateProjectsSwiper = (props) => {
     
     if (i === 0) {
         projectSlides.push(
-            images.map(image => <SwiperSlide key={image}><Image quality={50} alt={image} src={image} layout="fill" priority={true} objectFit="cover" /></SwiperSlide>)
+            images.map(image => <SwiperSlide key={image}><Image quality={25} alt={image} src={image} layout="fill" priority={true} objectFit="cover" /></SwiperSlide>)
         )
     }   else {
         projectSlides.push(

@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useRef } from 'react';
 import homeData from '../pages/api/homeData.json'
 import styles from '../styles/socials.module.css'
 

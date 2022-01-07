@@ -43,6 +43,9 @@ export default function Home(props) {
   const button1 = useRef(null);
   const button2 = useRef(null);
 
+
+  const video = useRef('../public/video-bg.mov')
+
   const {socialIcons, socialRefs} = SocialIcons();
 
   useEffect(() => {
@@ -58,13 +61,16 @@ export default function Home(props) {
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <Preloads />
         </Head>
-        <div className={reusable.globalContainer}>
+        <div className={`${reusable.globalContainer} ${styles.darkBg}`}>
+          <video autoPlay loop playsInline muted className={styles.bgVideo}>
+            <source src="/video-bg1.mp4" type="video/mp4"></source>
+          </video>
           <Navbar col={navCol}/>
           <motion.div 
           exit={{opacity: 0}}
           initial={{opacity: 0}}
           animate={{opacity: 1}}>
-          <div className={`${reusable.section} ${reusable.darkBg} ${reusable.centralised}`}>
+          <div className={`${reusable.section} ${reusable.centralised}`}>
             <div className={`${styles.pageTitle} ${reusable.fontColLight}`}>
               <h1 ref={e => title = e}>{portfolioName}</h1>
               <h2 ref={e => subtitleRef = e}>{subtitle}</h2>
