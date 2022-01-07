@@ -1,13 +1,13 @@
-import styles from './styles/home.module.css'
-import reusable from './styles/reusable.module.css'
-import Navbar from './components/Navbar'
-import homeData from './pages/api/homeData.json'
+import styles from '../styles/homestyles.module.css'
+import reusable from '../styles/reusable.module.css'
+import Navbar from '../components/Navbar'
+import homeData from '../pages/api/homeData.json'
 import themeData from './api/themeData.json'
 import { useRef, useEffect } from 'react';
-import { aboutAnimation, skillsAnimation, titleAnimation } from './components/homeGsapAnimations'
-import SocialIcons from './components/socialIcons';
+import { aboutAnimation, skillsAnimation, titleAnimation } from '../components/homeGsapAnimations'
+import SocialIcons from '../components/socialIcons';
 import Head from 'next/head'
-import Preloads from './components/preload'
+import Preloads from '../components/preload'
 import { motion } from 'framer-motion'
 import { CSSPlugin } from 'gsap';
 import gsap from 'gsap';
