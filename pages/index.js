@@ -52,7 +52,7 @@ export default function Home(props) {
     titleAnimation(tl, initialOpen, title, subtitleRef);
     skillsAnimation(tl, skill1, list1, list2, list3, list4, list5, skill2, skillsSection);
     aboutAnimation(gsap, aboutSection, bioRef, button1, button2, socialRefs.current)
-  }, [])
+  })
 
   return (
       <div>

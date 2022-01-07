@@ -27,7 +27,7 @@ export default function Projects(props) {
         imageAnimation(tl, sectionRefs.current, imageRefs.current)
         sectionAnimation(tl, sectionRefs.current)
         openAnimation(tl, sectionRefs.current[0], imageRefs.current[0], titleRefs.current[0])
-    }, [])
+    })
 
     const projects = projectsData.map((data, i) =>
         <div ref={el => {sectionRefs.current[i] = el}} key={'div1 ' + i} className={`${reusable.section} ${reusable.spacedSection}`}>
