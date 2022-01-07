@@ -4,11 +4,11 @@ import styles from '../styles/projects.module.css';
 import projectsData from './api/projectsData.json'
 import { useRef, useEffect } from 'react';
 import { imageAnimation, openAnimation, sectionAnimation } from '../components/projectsGsapAnimations';
-import CreateProjectsSwiper from './CreateProjectsSwiper';
+import CreateProjectsSwiper from '../components/CreateProjectsSwiper';
 import Head from 'next/head';
 import Preloads from '../components/preload';
 import { motion } from 'framer-motion';
-import CreateProjectButtons from './CreateProjectButtons';
+import CreateProjectButtons from '../components/CreateProjectButtons';
 
 const navCol = '#272727';
 
