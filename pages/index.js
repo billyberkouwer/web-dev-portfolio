@@ -9,23 +9,24 @@ import SocialIcons from '../components/socialIcons';
 import Head from 'next/head'
 import Preloads from '../components/preload'
 import { motion } from 'framer-motion'
-
-const navCol = themeData.navColLight;
-const portfolioName = homeData.title;
-const subtitle = homeData.subtitle;
-const webDevSkills = homeData.skills1;
-const designSkills = homeData.skills2;
-const bio = homeData.bio;
+import { CSSPlugin } from 'gsap';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 export default function Home(props) {
 
-  const gsap = props.gsap;
-  const ScrollTrigger = props.ScrollTrigger;
+  const navCol = themeData.navColLight;
+  const portfolioName = homeData.title;
+  const subtitle = homeData.subtitle;
+  const webDevSkills = homeData.skills1;
+  const designSkills = homeData.skills2;
+  const bio = homeData.bio;
+  const bioText = bio.split('\n').map((item, i) => <p key={i} className={`${styles.bioText} ${reusable.fontColLight}`}>{item}</p>);
+
+
   const initialOpen = props.initialLoad;
 
-  gsap.registerPlugin(ScrollTrigger);
-
-  const bioText = bio.split('\n').map((item, i) => <p key={i} className={`${styles.bioText} ${reusable.fontColLight}`}>{item}</p>);
+  gsap.registerPlugin(ScrollTrigger, CSSPlugin);
 
   const tl = gsap.timeline();
   const title = useRef(null);
@@ -42,9 +43,6 @@ export default function Home(props) {
   const bioRef = useRef(null);
   const button1 = useRef(null);
   const button2 = useRef(null);
-
-
-  const video = useRef('../public/video-bg.mov')
 
   const {socialIcons, socialRefs} = SocialIcons();
 

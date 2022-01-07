@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import { CSSPlugin } from 'gsap';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useState, useEffect } from 'react';
@@ -17,8 +18,6 @@ function MyApp({ Component, pageProps }) {
     <AnimatePresence exitBeforeEnter>
       <Component {...pageProps} 
         initialLoad={initialLoad}
-        gsap={gsap}
-        ScrollTrigger={ScrollTrigger}
       />
     </AnimatePresence>
   );

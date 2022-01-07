@@ -9,19 +9,20 @@ import Head from 'next/head';
 import Preloads from '../components/preload';
 import { motion } from 'framer-motion';
 import CreateProjectButtons from '../components/CreateProjectButtons';
+import { CSSPlugin } from 'gsap';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 const navCol = '#272727';
 
 export default function Projects(props) {
-    const gsap = props.gsap;
-    const ScrollTrigger = props.ScrollTrigger;
 
     const sectionRefs = useRef([])
     const imageRefs = useRef([])
     const titleRefs = useRef([])
     const tl = gsap.timeline()
 
-    gsap.registerPlugin(ScrollTrigger)
+    gsap.registerPlugin(ScrollTrigger, CSSPlugin)
 
     useEffect(() => {
         imageAnimation(tl, sectionRefs.current, imageRefs.current)
