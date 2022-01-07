@@ -1,7 +1,5 @@
-import { Power3 } from "gsap";
-
 export function openAnimation(tl, sectionRef, imageRef, titleRef) {
-    tl.from(
+        tl.from(
         [imageRef], {
             x: 100,
             opacity: 0,
@@ -11,7 +9,7 @@ export function openAnimation(tl, sectionRef, imageRef, titleRef) {
 }
 
 export function imageAnimation(tl, sectionRefs, imageRefs) {
-    for (let i = 0; i < imageRefs.length; i++) {
+    for (let i = 1; i < imageRefs.length; i++) {
         tl.from(
             imageRefs[i], {
               x: 100,

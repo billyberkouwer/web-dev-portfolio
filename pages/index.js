@@ -104,7 +104,7 @@ export default function Home(props) {
           <div ref={e => aboutSection = e} className={`${reusable.section} ${reusable.darkBg}`} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <div>
               <div ref={e => bioRef = e}>
-                {bioText}
+                I combine the latest website development practices with expertise in visual design and asset production. \n Working as a visual artist and designer led me to discover my passion for website development. Since starting my professional practice in 2019, I have worked on a variety of web projects for individuals and businesses as both an engineer and a designer. \n As a front-end developer, I write clean and performant code to develop websites and apps. I also design user interfaces, which has enabled me to take on projects that require both design and development. Whether I am designing and developing, or working from a given UI design, I produce my websites and apps with careful attention to detail and with scalability in mind. \n In addition to my web development practice, I have worked on creative and commercial projects as a visual artist, 3D designer, video producer and photographer. My visual art has been exhibited internationally and my commercial photography has been reproduced in print editions by international gallery, Lumas.
               </div>
               <div className={styles.buttonContainer}>
                 <button ref={e => button1 = e} className={styles.aboutButton}>See Web Projects</button>
