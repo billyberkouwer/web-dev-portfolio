@@ -1,12 +1,11 @@
-import reusable from '../styles/reusable.module.css'
-import Navbar from '../components/Navbar'
-import themeData from './api/themeData.json'
-import styles from '../styles/contact.module.css'
-import socials from '../components/socialIcons.js'
-import Form from '../components/form.js'
-import Head from 'next/head'
-import Preloads from '../components/preload'
-import { motion } from 'framer-motion'
+import reusable from '../styles/reusable.module.css';
+import Navbar from '../components/Navbar';
+import themeData from './api/themeData.json';
+import styles from '../styles/contact.module.css';
+import Form from '../components/form.js';
+import Head from 'next/head';
+import Preloads from '../components/preload';
+import { motion } from 'framer-motion';
 
 const navCol = themeData.navColLight;
 

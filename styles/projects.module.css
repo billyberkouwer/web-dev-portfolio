@@ -27,6 +27,14 @@
     flex-direction: column;
 }
 
+.textContainer {
+    flex-grow: 1;
+}
+
+.textContainer p {
+    margin-bottom: 10px;
+}
+
 .imageContainer {
     height: 100%;
     width: 100%;

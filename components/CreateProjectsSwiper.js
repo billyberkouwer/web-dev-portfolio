@@ -10,7 +10,7 @@ import styles from '../styles/swiper.module.css';
 const CreateProjectsSwiper = (props) => {
     const images = props.images;
     const i = props.i;
-    const projectSlides = []
+    const projectSlides = [];
     
     if (i === 0) {
         projectSlides.push(
@@ -20,7 +20,7 @@ const CreateProjectsSwiper = (props) => {
         projectSlides.push(
             images.map(image => <SwiperSlide key={image}><Image quality={50} alt={image} src={image} layout="fill" objectFit="cover" /></SwiperSlide>)
         )
-    }
+    };
 
 
     return (

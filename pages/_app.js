@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     setInitialLoad(0)
-  }, [])
+  }, []);
   
   return (
     <AnimatePresence exitBeforeEnter>

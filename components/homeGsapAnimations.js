@@ -13,70 +13,71 @@ export function titleAnimation(tl, initialOpen, title, subtitleRef) {
           stagger: .5,
         }
       );
-    }
-}
+    };
+};
 
 export function skillsAnimation(tl, skill1, list1, list2, list3, list4, list5, skill2, skillsSection) {
-    tl.fromTo(
-        [skill1, list3, list2, list1], 
-            {y: -125},
-            { y: 0,
-              scrollTrigger: {
-              trigger: skillsSection,
-              start: 'top 50%',
-              end: "+=300",
-              scrub: .75,
-            }},
-    );
-    tl.fromTo(
-      [list1, list2, list3], 
-        {opacity: 0},
-        {
-          opacity: 1,
-          stagger: -.15,
-          scrollTrigger: {
+  tl.fromTo(
+      [skill1, list3, list2, list1], 
+      {y: -125},
+      {y: 0,
+      scrollTrigger: {
+        trigger: skillsSection,
+        start: 'top 50%',
+        end: "+=300",
+        scrub: .75,
+        }
+      }
+  );
+  tl.fromTo(
+    [list1, list2, list3], 
+    {opacity: 0},
+    {
+    opacity: 1,
+    stagger: -.15,
+    scrollTrigger: {
+      trigger: skillsSection,
+      start: 'top 50%',
+      end: "+=300",
+      scrub: .75,
+    }},
+  ).fromTo(
+    [list4, list5], 
+    {opacity: 0},
+    {
+      opacity: 1,
+      stagger: .15,
+      scrollTrigger: {
+        trigger: skillsSection,
+        start: 'top 30%',
+        scrub: .75,
+        end: "+=300"
+      },
+    },
+  ).fromTo(
+    [skill1, skill2], 
+      {opacity: 0},
+      {
+      opacity: 1,
+      scrollTrigger: {
+        trigger: skillsSection,
+        start: 'top 50%',
+        scrub: .75,
+        end: "+=300"
+      },
+    }
+  ).fromTo(
+      [skill2, list4, list5], 
+      {y: 125},
+      {
+        y: 0,
+        scrollTrigger: {
           trigger: skillsSection,
           start: 'top 50%',
           end: "+=300",
           scrub: .75,
-        }},
-    ).fromTo(
-      [list4, list5], 
-      {opacity: 0},
-      {
-        opacity: 1,
-        stagger: .15,
-        scrollTrigger: {
-          trigger: skillsSection,
-          start: 'top 30%',
-          scrub: .75,
-          end: "+=300"
         },
       },
-    ).fromTo(
-      [skill1, skill2], 
-        {opacity: 0},
-      {
-        opacity: 1,
-        scrollTrigger: {
-          trigger: skillsSection,
-          start: 'top 50%',
-          scrub: .75,
-          end: "+=300"
-        },
-      }
-    ).fromTo(
-        [skill2, list4, list5], 
-        {y: 125},
-        {
-          y: 0,
-            scrollTrigger: {
-              trigger: skillsSection,
-              start: 'top 50%',
-              end: "+=300",
-              scrub: .75,
-            },
-        },
     );
 }
 
@@ -93,7 +94,7 @@ export function aboutAnimation(gsap, aboutSection, bioRef, button1, button2, soc
         scrub: .75,
       },
     }
-  )
+  );
 
   gsap.fromTo(
     [button1, button2], 
@@ -111,7 +112,7 @@ export function aboutAnimation(gsap, aboutSection, bioRef, button1, button2, soc
         scrub: .75,
       },
     }
-  )
+  );
 
   gsap.fromTo(
     socialRefs, 
@@ -128,6 +129,5 @@ export function aboutAnimation(gsap, aboutSection, bioRef, button1, button2, soc
         scrub: .75,
       },
     }
-  )
-
+  );
 }

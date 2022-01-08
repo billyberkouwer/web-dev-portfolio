@@ -9,6 +9,6 @@ const Navbar = (props) => {
             <Link href="/contact"><a>Contact</a></Link>
         </div>
      );
-}
+};
 
 export default Navbar;

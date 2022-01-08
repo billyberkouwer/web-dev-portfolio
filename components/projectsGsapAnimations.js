@@ -1,5 +1,3 @@
-import { Power3 } from "gsap";
-
 export function openAnimation(tl, sectionRef, imageRef, titleRef) {
     tl.fromTo(
         [imageRef], {
