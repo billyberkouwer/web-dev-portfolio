@@ -2,8 +2,6 @@ import Image from 'next/image';
 import { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import styles from '../styles/swiper.module.css';
 import { openAnimation } from './projectsGsapAnimations';
 import { useRef } from 'react';
@@ -13,14 +11,20 @@ const CreateProjectsSwiper = (props) => {
     const images = props.images;
     const i = props.i;
     const projectSlides = [];
+    console.log(props.titles)
     
-    if (i === 0) {
+    if (props.titles === "Ocove Studios") {
         projectSlides.push(
-            images.map(image => <SwiperSlide key={image}><Image quality={25} alt={image} src={image} layout="fill" objectFit="cover" /></SwiperSlide>)
+            images.map(image => <SwiperSlide key={image}>          
+                <video muted autoPlay playsInline loop className={styles.projectVideo} style={{pointerEvents: 'none'}}>
+                    <source src={image} type="video/mp4"></source>
+                </video>
+                </SwiperSlide>)
         )
+        console.log(projectSlides)
     }   else {
         projectSlides.push(
-            images.map(image => <SwiperSlide key={image}><Image quality={50} alt={image} src={image} layout="fill" objectFit="cover" /></SwiperSlide>)
+            images.map(image => <SwiperSlide key={image}><Image quality={25} alt={image} src={image} layout="fill" objectFit="contain" /></SwiperSlide>)
         )
     };
 

@@ -1,50 +1,44 @@
 [
     {
-        "title": "Ocove Studios",
-        "text": "Ocove Studios is a freelance collective that currently comprises three web developers and creatives. I co-founded the collective, designed and developed the website, and created the 3d visual assets and video content. /n The collective structure of Ocove Studios allows us, as freelancers, to take on larger and a greater variety of projects. Work is distributed amongst collective members to make use of each persons' areas of expertise and deliver high quality digital products and services.",
-        "images": ["/images/gardens.jpg", "/images/ronaldson.jpg", "/images/shanti-panchal.jpg"],
-        "buttons": [["Live", ""], ["Site Repo", ""]]
-    },
-    {
         "title": "Chappel Galleries",
         "text": "Chappel Galleries is a long-standing commercial gallery of modern and contemporary art. Throughout 2020 and 2021, I produced a series of five videos for their exhibitions. Each video contained an original score, interviews with the artists, and documentation of the gallery and the work on display.",
-        "images": [],
-        "buttons": [["Winter Show", "http://www.chappelgalleries.co.uk/exhibitions-11/winter-2021/winter-2021.htm"], ["Ronald Ronaldson", "http://www.chappelgalleries.co.uk/exhibitions-11/ronald-ronaldson-2021/ronald-ronaldson-2021.htm"],["Sue Blandford", "http://www.chappelgalleries.co.uk/exhibitions-11/sue-blandford/sue-blandford.htm"]]
-    },
-    {
-        "title": "Helen Howard, Ceramicist",
-        "text": "Helen Howard is a ceramic and drawing artist whose work is inspired by observations of the natural world. I developed Helen’s website, which displays collections of Raku-fired pots, drawings and information about her work.",
-        "images": ["/images/gardens.jpg", "/images/gardens.jpg", "/images/gardens.jpg"],
-        "buttons": [["Live", "https://www.helenhowardceramics.co.uk/"]] 
+        "images": ["/images/cgalleries/gardens.jpg", "/images/cgalleries/ronaldson.jpg", "/images/cgalleries/shanti-panchal.jpg"],
+        "buttons": [["Video 1", "http://www.chappelgalleries.co.uk/exhibitions-11/winter-2021/winter-2021.htm"], ["Video 2", "http://www.chappelgalleries.co.uk/exhibitions-11/ronald-ronaldson-2021/ronald-ronaldson-2021.htm"],["Video 3", "http://www.chappelgalleries.co.uk/exhibitions-11/sue-blandford/sue-blandford.htm"]]
     },
     {
         "title": "John Hounam, Artist",
         "text": "John Hounam is a visual artist based in Oxford, UK. I developed his website, which displays his varied portfolio of watercolours, paintings, drawings and video work.",
-        "images": [],
-        "buttons": [["Live", "https://www.johnhounam.com/"]]  
+        "images": ["/images/jhounam/haldrine-cove_orig.jpg", "/images/jhounam/pont-de-bir-hakeim.jpg", "/images/jhounam/reclining-figure-on-draped-chaise-longue_orig.jpg", "/images/jhounam/work-in-progress.jpg"],
+        "buttons": [["Website", "https://www.johnhounam.com/"]]  
+    },
+    {
+        "title": "Ocove Studios",
+        "text": "Ocove Studios is a freelance collective that currently comprises three web developers and creatives. I co-founded the collective, designed and developed the website, and created the 3d visual assets and video content. /n The collective structure of Ocove Studios allows us, as freelancers, to take on larger and a greater variety of projects. Work is distributed amongst collective members to make use of each persons' areas of expertise and deliver high quality digital products and services.",
+        "images": ["/ocove-video-1.mp4", "/ocove-video-2.mp4"],
+        "buttons": [["Site Repo", ""]]
+    },
+    {
+        "title": "Helen Howard, Ceramicist",
+        "text": "Helen Howard is a ceramic and drawing artist whose work is inspired by observations of the natural world. I developed Helen’s website, which displays collections of Raku-fired pots, drawings and information about her work.",
+        "images": ["/images/hhoward/catching-waves-ii-a-29-x-29-x-12d_orig.jpg", "/images/hhoward/corrie-series-v-c-c_orig.jpg", "/images/hhoward/through-branches-i-charcoal-and-graphite-drawing-122-x-95-cm_orig.jpg"],
+        "buttons": [["Website", "https://www.helenhowardceramics.co.uk/"]] 
     },
     {
         "title": "Isabel Knowland, Artist",
         "text": "Isabel Knowland is a multidisciplinary artist working in sculpture, painting, installation, and printmaking. I designed and developed her website to display her collections of work to grow her online presence.",
-        "images": [],
-        "buttons": [["Live", "https://www.isabelknowland.com/"], ["Site Repo", "https://github.com/billyberkouwer/isabel-knowland-website.git"]]    
+        "images": ["/images/iknowland/_DSC0183.jpg", "/images/iknowland/IMG_0576.jpg", "/images/iknowland/IMG_6118.jpg"],
+        "buttons": [["Website", "https://www.isabelknowland.com/"], ["Site Repo", "https://github.com/billyberkouwer/isabel-knowland-website.git"]]    
     },
     {
         "title": "3D Projects",
-        "text": "Text about Ocove Studios",
-        "images": [],
+        "text": "I produce models, textures, scenes and animations using 3D software. I specialise in hard-surface modeling, scene composition, texturing and animation. These models and scenes can be used as assets on websites. I have experience coding interactive 3D scenes for the web and completing commissions for clients. My 3D work has also been produced in print.",
+        "images": ["/images/3d/full-scene-test-4e.jpg", "/images/3d/full-scene-test-5e.jpg", "/images/3d/image-100.jpg", "/images/3d/image-102.jpg", "/images/3d/image-104.jpg", "/images/3d/image-106.jpg", "/images/3d/image-108.jpg"],
         "buttons": [] 
     },
     {
-        "title": "Ocove Studios",
-        "text": "Text about Ocove Studios",
-        "images": [],
-        "buttons": []  
-    },
-    {
-        "title": "Ocove Studios",
-        "text": "Text about Ocove Studios",
-        "images": [],
-        "buttons": []   
+        "title": "Visual Art",
+        "text": "My art practice sits at the intersection of traditional art practices and digital technology. My paintings have been exhibited internationally.",
+        "images": ["/images/art/MOM_ICT_ARTXIV-1.jpg", "/images/art/(insta compressed) Deep in a Dream, acrylic paint on canvas, 127x92cm.jpg", "/images/art/Abstract Compression XIX - acrylic paint on custom shaped mdf board e.jpg", "/images/art/IMG_0316e.jpg", "/images/art/IMG_0638ecec.jpg", "/images/art/Myles-Berkouwer_Billy_Abstract_Compression_XVIIIe.jpg"],
+        "buttons": [["Website", "https://www.billyberkouwer.com"]]  
     }
 ]

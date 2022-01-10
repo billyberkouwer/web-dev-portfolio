@@ -55,7 +55,7 @@ export default function Projects(props) {
                         </div>
                         <div key={'div6 ' + i} className={styles.secondCol}>
                             <div ref={el => {imageRefs.current[i] = el}} key={'div5 ' + i} className={styles.imageContainer}>
-                                <CreateProjectsSwiper i={i} images={data.images}/>
+                                <CreateProjectsSwiper i={i} titles={data.title} images={data.images}/>
                             </div>
                         </div>
                     </div>

@@ -3,7 +3,7 @@ import styles from '../styles/form.module.css';
 export default function Form() {
     return (
     <div className={styles.formContainer}>
-        <form name="contact" method="POST">
+        <form data-netlify="true" name="contact" method="POST">
             <input type="hidden" name="contact-form" value="contact" />
             <p>
                 <input type="text" name="fullname" id="fullname" placeholder="Your Name"></input>
