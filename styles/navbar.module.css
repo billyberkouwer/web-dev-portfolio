@@ -26,3 +26,14 @@
         margin: 0 20px;
     }
 }
+
+@media screen and (max-width: 585px) {
+    .navContainer {
+        height: 50px;
+    }
+
+    .navContainer a {
+        font-size: 12px;
+        margin: 0 15px;
+    }
+}

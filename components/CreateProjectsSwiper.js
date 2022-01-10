@@ -5,6 +5,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import styles from '../styles/swiper.module.css';
+import { openAnimation } from './projectsGsapAnimations';
+import { useRef } from 'react';
 
 
 const CreateProjectsSwiper = (props) => {

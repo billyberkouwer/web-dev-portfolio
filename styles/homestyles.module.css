@@ -31,7 +31,7 @@
   font-family: Big Shoulders;
   font-size: 30px;
   line-height: 1.05em;
-  left: 25%;
+  left: 24%;
 }
 
 .rotTextContainer1, .rotTextContainer2, .toplist1, .toplist2, .toplist3 {
@@ -41,7 +41,7 @@
 
 .bottomlist2 {
   top: 4.5em;
-  left: calc(25% + 5.75em);
+  left: calc(24% + 5.75em);
 }
 
 .rotTextContainer1 h3, .rotTextContainer2 h3 {
@@ -61,12 +61,12 @@
 
 .toplist2 {
   bottom: 5.5em;
-  left: calc(25% + 4em);
+  left: calc(24% + 4em);
 }
 
 .toplist3 {
   bottom: 5.5em;
-  left: calc(25% + 9em)
+  left: calc(24% + 9em)
 }
 
 .half1 {
@@ -101,6 +101,7 @@
 .aboutButton {
   position: relative;
   margin: 60px 30px 0 30px;
+  background-color: #e9e9e9;
 }
 
 .socialsContainer {
@@ -219,4 +220,32 @@
   .socialsContainer {
     margin-top: 20px;
   }
+}
+
+@media screen and (max-width: 395px) {
+  .pageTitle h1 {
+    font-size: 40px;
+  }
+
+  .pageTitle h2 {
+    font-size: 25px;
+  }
+
+  .toplist1, .toplist2, .toplist3, .bottomlist1, .bottomlist2 {
+    font-size: 10px;
+  }
+
+  .rotTextContainer1 h3, .rotTextContainer2 h3 {
+    font-size: 12px;
+  }
+
+  .bioText {
+    font-size: 10px;
+  }
+
+  .aboutButton {
+    font-size: 12px;
+    margin: 40px 10px 0 10px;
+  }
+
 }

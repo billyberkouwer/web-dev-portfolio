@@ -47,7 +47,7 @@
 }
 
 .buttonContainer button {
-    margin: 0 10px 0 0px;
+    margin: 0 10px 5px 0px;
 }
 
 /*----- MEDIA QUERIES -----*/
@@ -87,5 +87,16 @@
   }
   
   @media screen and (max-width: 585px) {
-    
+    .projectHeading {
+        font-size: 20px;
+    }
+
+    .textContainer p {
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+
+    .buttonContainer button a {
+        font-size: 15px;
+    }
   }

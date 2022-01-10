@@ -60,7 +60,7 @@ export default function Home(props) {
           <Preloads />
         </Head>
         <div className={`${reusable.globalContainer} ${styles.darkBg}`}>
-          <video autoPlay loop playsInline muted className={styles.bgVideo}>
+          <video muted autoPlay playsInline loop className={styles.bgVideo} style={{pointerEvents: 'none'}}>
             <source src="/video-bg1.mp4" type="video/mp4"></source>
           </video>
           <Navbar col={navCol}/>
