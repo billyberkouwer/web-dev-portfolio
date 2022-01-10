@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const SocialIcons = () => {
     const socialRefs = useRef([])
-    const socialIcons = homeData.socials.map((arr, i) => <Link href={arr[1]}><button key={arr[0]} ref={(element) => {socialRefs.current[i] = element}} className={styles.socialButton}><Image src={arr[2]} quality={25} alt={arr[0]} height='35px' width='35px' objectFit="contain"/></button></Link>)
+    const socialIcons = homeData.socials.map((arr, i) => <Link key={arr[0]} href={arr[1]}><button ref={(element) => {socialRefs.current[i] = element}} className={styles.socialButton}><Image src={arr[2]} quality={25} alt={arr[0]} height='35px' width='35px' objectFit="contain"/></button></Link>)
     return {socialIcons, socialRefs};
 }
 
