@@ -12,6 +12,7 @@ import { motion } from 'framer-motion'
 import { CSSPlugin } from 'gsap';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import Link from 'next/link';
 
 export default function Home(props) {
 
@@ -107,8 +108,8 @@ export default function Home(props) {
                 {bioText}
               </div>
               <div className={styles.buttonContainer}>
-                <button ref={e => button1 = e} className={styles.aboutButton}>See Web Projects</button>
-                <button ref={e => button2 = e} className={styles.aboutButton}>Contact Me</button>
+                <Link href="/projects"><button ref={e => button1 = e} className={styles.aboutButton}>See Web Projects</button></Link>
+                <Link href="/contact"><button ref={e => button2 = e} className={styles.aboutButton}>Contact Me</button></Link>
               </div>
               <div className={styles.socialsContainer}>
                 {socialIcons}

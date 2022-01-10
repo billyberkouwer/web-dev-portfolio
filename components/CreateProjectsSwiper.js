@@ -1,10 +1,8 @@
 import Image from 'next/image';
-import { Autoplay, Navigation } from 'swiper';
+import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import styles from '../styles/swiper.module.css';
-import { openAnimation } from './projectsGsapAnimations';
-import { useRef } from 'react';
 
 
 const CreateProjectsSwiper = (props) => {
