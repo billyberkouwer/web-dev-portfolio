@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Autoplay } from 'swiper';
+import { Autoplay, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import styles from '../styles/swiper.module.css';
@@ -30,11 +30,11 @@ const CreateProjectsSwiper = (props) => {
 
 
     return (
-        <Swiper
-        modules={[Autoplay]}
+        <Swiper styles={{swiperNavigationSize: '30px'}}
+        modules={[Navigation]}
         className={styles.swiperContainer}
-        autoplay={{delay: 5000}}
         spaceBetween={50}
+        navigation
         loop
         speed={1000}
         slidesPerView={1}
