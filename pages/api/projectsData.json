@@ -1,11 +1,5 @@
 [
     {
-        "title": "Chappel Galleries",
-        "text": "Chappel Galleries is a long-standing commercial gallery of modern and contemporary art. Throughout 2020 and 2021, I produced a series of five videos for their exhibitions. Each video contained an original score, interviews with the artists, and documentation of the gallery and the work on display.",
-        "images": ["/images/cgalleries/gardens.jpg", "/images/cgalleries/ronaldson.jpg", "/images/cgalleries/shanti-panchal.jpg"],
-        "buttons": [["Video 1", "http://www.chappelgalleries.co.uk/exhibitions-11/winter-2021/winter-2021.htm"], ["Video 2", "http://www.chappelgalleries.co.uk/exhibitions-11/ronald-ronaldson-2021/ronald-ronaldson-2021.htm"],["Video 3", "http://www.chappelgalleries.co.uk/exhibitions-11/sue-blandford/sue-blandford.htm"]]
-    },
-    {
         "title": "John Hounam, Artist",
         "text": "John Hounam is a visual artist based in Oxford, UK. I developed his website, which displays his varied portfolio of watercolours, paintings, drawings and video work.",
         "images": ["/images/jhounam/haldrine-cove_orig.jpg", "/images/jhounam/pont-de-bir-hakeim.jpg", "/images/jhounam/reclining-figure-on-draped-chaise-longue_orig.jpg", "/images/jhounam/work-in-progress.jpg"],
@@ -13,9 +7,15 @@
     },
     {
         "title": "Ocove Studios",
-        "text": "Ocove Studios is a freelance collective that currently comprises three web developers and creatives. I co-founded the collective, designed and developed the website, and created the 3d visual assets and video content. /n The collective structure of Ocove Studios allows us, as freelancers, to take on larger and a greater variety of projects. Work is distributed amongst collective members to make use of each persons' areas of expertise and deliver high quality digital products and services.",
+        "text": "Ocove Studios is a freelance collective that currently comprises three web developers and creatives. I co-founded the collective, designed and developed the website with Ocove member Matt, and created the 3d visual assets and video content. /n The collective structure of Ocove Studios allows us, as freelancers, to take on larger and a greater variety of projects. Work is distributed amongst collective members to make use of each persons' areas of expertise and deliver high quality digital products and services.",
         "images": ["/ocove-video-1.mp4", "/ocove-video-2.mp4"],
         "buttons": [["Site Repo", ""]]
+    },
+    {
+        "title": "Chappel Galleries",
+        "text": "Chappel Galleries is a long-standing commercial gallery of modern and contemporary art. Throughout 2020 and 2021, I produced a series of five videos for their exhibitions. Each video contained an original score, interviews with the artists, and documentation of the gallery and the work on display.",
+        "images": ["/images/cgalleries/gardens.jpg", "/images/cgalleries/ronaldson.jpg", "/images/cgalleries/shanti-panchal.jpg"],
+        "buttons": [["Video 1", "http://www.chappelgalleries.co.uk/exhibitions-11/winter-2021/winter-2021.htm"], ["Video 2", "http://www.chappelgalleries.co.uk/exhibitions-11/ronald-ronaldson-2021/ronald-ronaldson-2021.htm"],["Video 3", "http://www.chappelgalleries.co.uk/exhibitions-11/sue-blandford/sue-blandford.htm"]]
     },
     {
         "title": "Helen Howard, Ceramicist",
