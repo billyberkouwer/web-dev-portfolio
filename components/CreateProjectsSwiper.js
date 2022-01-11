@@ -39,7 +39,6 @@ const CreateProjectsSwiper = (props) => {
         )
     };
 
-
     return (
         <Swiper styles={{swiperNavigationSize: '30px'}}
             modules={[Navigation]}
