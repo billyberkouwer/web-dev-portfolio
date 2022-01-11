@@ -13,6 +13,7 @@ import { CSSPlugin } from 'gsap';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home(props) {
 
@@ -60,7 +61,7 @@ export default function Home(props) {
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <Preloads />
         </Head>
-        <div className={`${reusable.globalContainer} ${styles.darkBg}`}>
+        <div id={'section1'} className={`${reusable.globalContainer} ${styles.darkBg}`}>
           <video muted autoPlay playsInline loop className={styles.bgVideo} style={{pointerEvents: 'none'}}>
             <source src="/video-bg1.mp4" type="video/mp4"></source>
           </video>
@@ -74,8 +75,13 @@ export default function Home(props) {
               <h1 ref={e => title = e}>{portfolioName}</h1>
               <h2 ref={e => subtitleRef = e}>{subtitle}</h2>
             </div>
+            <div className={reusable.arrow}>
+              <a href='#section2'>
+                <Image src={'/icons/down-arrow.png'} alt={'down arrow'} layout='fill' />
+              </a>
+            </div>
           </div>
-          <div ref={e => skillsSection = e} className={reusable.section} style={{overflow: 'hidden'}}>
+          <div id={'section2'} ref={e => skillsSection = e} className={reusable.section} style={{overflow: 'hidden'}}>
               <div className={`${styles.half1} ${styles.rotation}`}>
                 <div className={styles.rotTextContainer1}>
                   <h3 ref={e => skill1 = e} className={`${reusable.fontColDark}`}>Web Development Skills</h3>
@@ -101,8 +107,13 @@ export default function Home(props) {
                   </ul>
                 </div>
               </div>
+              <div className={reusable.arrow}>
+                <a href='#section3'>
+                  <Image src={'/icons/down-arrow.png'} alt={'down arrow'} layout='fill' />
+                </a>
+              </div>
           </div>
-          <div ref={e => aboutSection = e} className={`${reusable.section} ${reusable.darkBg}`} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+          <div id={'section3'} ref={e => aboutSection = e} className={`${reusable.section} ${reusable.darkBg}`} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <div>
               <div ref={e => bioRef = e}>
                 {bioText}
@@ -115,6 +126,7 @@ export default function Home(props) {
                 {socialIcons}
               </div>
               <p className={styles.watermark}>This site was designed in Figma and developed using Next.js. Title font courtesy of Pangram Pangram.</p>
+              <a href='#section1'><h1 className={`${styles.top}`}>Back to Top</h1></a>
             </div>
           </div>
           </motion.div>

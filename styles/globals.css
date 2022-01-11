@@ -45,6 +45,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #272727;
+  scroll-behavior: smooth;
 }
 
 h1 {

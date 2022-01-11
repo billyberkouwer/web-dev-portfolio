@@ -49,8 +49,53 @@
     align-items: center;
 }
 
+.arrow {
+    position: absolute;
+    width: 70px;
+    height: 40px;
+    bottom: 3%;
+    right: 50%;
+    transition: .5s;
+    opacity: .6;
+    -webkit-animation:bounce 2s linear infinite;
+    -moz-animation:bounce 2s linear infinite;
+    animation:bounce 2s linear infinite;
+}
+
+.arrow:hover {
+    transform: translateY(-20%);
+    opacity: 1;
+}
+
+@-moz-keyframes bounce { 
+50% { -moz-transform: translateY(-20%); } 
+}
+
+@-webkit-keyframes bounce { 
+50% { -webkit-transform: translateY(-20%); } 
+}
+
+@keyframes bounce { 
+50% { 
+  -webkit-transform: translateY(-20%); 
+  transform:translateY(-20%);
+    } 
+}
+
+@media screen and (max-width: 800px) {
+    .arrow {
+        width: 60px;
+        height: 35px;
+    }
+}
+
 @media screen and (max-width: 585px) {
     .spacedSection {
         padding-top: 50px;
+    }
+
+    .arrow {
+        width: 40px;
+        height: 22px;
     }
 }
