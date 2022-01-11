@@ -8,8 +8,7 @@ const CreateProjectsSwiper = (props) => {
     const images = props.images;
     const i = props.i;
     const projectSlides = [];
-    console.log(props.titles)
-    
+
     if (props.titles === "Ocove Studios") {
         projectSlides.push(
             images.map(image => 
