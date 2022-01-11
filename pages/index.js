@@ -108,8 +108,8 @@ export default function Home(props) {
                 {bioText}
               </div>
               <div className={styles.buttonContainer}>
-                <Link href="/projects"><button ref={e => button1 = e} className={styles.aboutButton}>See Web Projects</button></Link>
-                <Link href="/contact"><button ref={e => button2 = e} className={styles.aboutButton}>Contact Me</button></Link>
+                <Link passHref href="/projects"><button ref={e => button1 = e} className={styles.aboutButton}>See Web Projects</button></Link>
+                <Link passHref href="/contact"><button ref={e => button2 = e} className={styles.aboutButton}>Contact Me</button></Link>
               </div>
               <div className={styles.socialsContainer}>
                 {socialIcons}
