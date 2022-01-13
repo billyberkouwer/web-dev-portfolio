@@ -3,8 +3,8 @@ import styles from '../styles/form.module.css';
 export default function Form() {
     return (
     <div className={styles.formContainer}>
-        <form data-netlify="true" name="contact" method="POST">
-            <input type="hidden" name="contact-form" value="contact" />
+        <form data-netlify="true" netlify data-netlify-honeypot="bot-field" name="contact" method="post">
+            <input type="hidden" name="form-name" value="contact" />
             <p>
                 <input type="text" name="fullname" id="fullname" placeholder="Your Name"></input>
             </p>

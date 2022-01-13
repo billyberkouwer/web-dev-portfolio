@@ -31,7 +31,8 @@ const CreateProjectsSwiper = (props) => {
                             quality={25} 
                             alt={image} 
                             src={image} 
-                            layout="fill" 
+                            layout="fill"
+                            loading="eager"
                             objectFit="contain"
                         />           
                     </div>
@@ -48,10 +49,9 @@ const CreateProjectsSwiper = (props) => {
             loop
             speed={1000}
             slidesPerView={1}
-            onSlideChange={() => {
-                setTimeout(() => {
-
-                }, 600)
+            lazy={{
+                loadPrevNext: true,
+                loadPrevNextAmount: 2,
             }}
         >
             {projectSlides}
