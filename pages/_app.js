@@ -16,11 +16,13 @@ function MyApp({ Component, pageProps }) {
   }, []);
   
   return (
-    <AnimatePresence exitBeforeEnter>
-      <Component {...pageProps} 
-        initialLoad={initialLoad}
-      />
-    </AnimatePresence>
+    <>
+      <AnimatePresence exitBeforeEnter>
+        <Component {...pageProps} 
+          initialLoad={initialLoad}
+        />
+      </AnimatePresence>
+    </>
   );
 }
 
