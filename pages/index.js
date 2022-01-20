@@ -58,6 +58,14 @@ export default function Home(props) {
         <Head>
           <title>Web Developer and UI Designer - Billy Myles-Berkouwer</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <meta name="description" content="Billy Myles-Berkouwer is a web developer and visual artist. See his skills and projects and contact him here." />
+          <meta name="robots" content="index, follow" />
+          <meta property="og:type" content="portfolio" />
+          <meta property="og:title" content="homepage" />
+          <meta property="og:description" content="Billy Myles-Berkouwer's web developer skills, visual design skills, and biography" />
+          <meta property="og:image" content="/og-image.png" />
+          <meta property="og:site_name" content="Web Developer and UI Designer - Billy Myles-Berkouwer" />
+          <link rel="canonical" href="https://bmbservices.netlify.app" />
           <Preloads />
         </Head>
         <div className={`${reusable.globalContainer} ${styles.darkBg}`}>
