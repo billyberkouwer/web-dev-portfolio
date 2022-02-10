@@ -63,7 +63,7 @@ export default function Home(props) {
           <meta property="og:type" content="portfolio" />
           <meta property="og:title" content="Web Developer and UI Designer - Billy Myles-Berkouwer" />
           <meta property="og:description" content="Billy Myles-Berkouwer is a web developer and visual artist. See his skills and projects and contact him here." />
-          <meta property="og:image" content="https://bmbservices.netlify.app/og-image.jpg" />
+          <meta property="og:image" content="/og-image.jpg" />
           <meta property="og:site_name" content="Web Developer and UI Designer - Billy Myles-Berkouwer" />
           <link rel="canonical" href="https://bmbservices.netlify.app" />
           <Preloads />
