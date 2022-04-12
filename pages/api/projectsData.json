@@ -9,7 +9,7 @@
         "title": "Ocove Studios",
         "text": "Ocove Studios is a freelance collective that currently comprises three web developers and creatives. I co-founded the collective, designed and developed the website with Ocove member Matt, and created the 3d visual assets and video content. /n The collective structure of Ocove Studios allows us, as freelancers, to take on larger and a greater variety of projects. Work is distributed amongst collective members to make use of each persons' areas of expertise and deliver high quality digital products and services.",
         "images": ["/ocove-video-1.mp4", "/ocove-video-2.mp4"],
-        "buttons": [["Site Repo", ""]]
+        "buttons": [["Live", "https://www.ocovestudios.co.uk/"], ["Site Repo", "https://github.com/ocovestudios/ocove-studios"]]
     },
     {
         "title": "Chappel Galleries",
