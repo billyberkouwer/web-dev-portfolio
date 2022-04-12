@@ -12,10 +12,10 @@
         "buttons": [["Live", "https://www.ocovestudios.co.uk/"], ["Site Repo", "https://github.com/ocovestudios/ocove-studios"]]
     },
     {
-        "title": "Chappel Galleries",
-        "text": "Chappel Galleries is a long-standing commercial gallery of modern and contemporary art. Throughout 2020 and 2021, I produced a series of five videos for their exhibitions. Each video contained an original score, interviews with the artists, and documentation of the gallery and the work on display.",
-        "images": ["/images/cgalleries/gardens.jpg", "/images/cgalleries/ronaldson.jpg", "/images/cgalleries/shanti-panchal.jpg"],
-        "buttons": [["Video 1", "http://www.chappelgalleries.co.uk/exhibitions-11/winter-2021/winter-2021.htm"], ["Video 2", "http://www.chappelgalleries.co.uk/exhibitions-11/ronald-ronaldson-2021/ronald-ronaldson-2021.htm"],["Video 3", "http://www.chappelgalleries.co.uk/exhibitions-11/sue-blandford/sue-blandford.htm"]]
+        "title": "Visual Art",
+        "text": "My art practice sits at the intersection of traditional art practices and digital technology. I designed and developed this site to display my artwork early in 2021. It was developed using HTML, CSS, and Vanilla JS.",
+        "images": ["/images/art/MOM_ICT_ARTXIV-1.jpg", "/images/art/(insta-compressed)-Deep-in-a-Dream-acrylic-paint-on-canvas-127x92cm.jpg", "/images/art/Abstract-Compression-XIX-acrylic-paint-on-custom-shaped-mdf-board-e.jpg", "/images/art/IMG_0316e.jpg", "/images/art/IMG_0638ecec.jpg", "/images/art/Myles-Berkouwer_Billy_Abstract_Compression_XVIIIe.jpg"],
+        "buttons": [["Website", "https://www.billyberkouwer.com"], ["Site Repo", "https://github.com/billyberkouwer/billy-berkouwer-artist-website"]]  
     },
     {
         "title": "Helen Howard, Ceramicist",
@@ -30,15 +30,15 @@
         "buttons": [["Website", "https://www.isabelknowland.com/"], ["Site Repo", "https://github.com/billyberkouwer/isabel-knowland-website.git"]]    
     },
     {
+        "title": "Chappel Galleries",
+        "text": "Chappel Galleries is a long-standing commercial gallery of modern and contemporary art. Throughout 2020 and 2021, I produced a series of five videos for their exhibitions. Each video contained an original score, interviews with the artists, and documentation of the gallery and the work on display.",
+        "images": ["/images/cgalleries/gardens.jpg", "/images/cgalleries/ronaldson.jpg", "/images/cgalleries/shanti-panchal.jpg"],
+        "buttons": [["Video 1", "http://www.chappelgalleries.co.uk/exhibitions-11/winter-2021/winter-2021.htm"], ["Video 2", "http://www.chappelgalleries.co.uk/exhibitions-11/ronald-ronaldson-2021/ronald-ronaldson-2021.htm"],["Video 3", "http://www.chappelgalleries.co.uk/exhibitions-11/sue-blandford/sue-blandford.htm"]]
+    },
+    {
         "title": "3D Projects",
         "text": "I produce models, textures, scenes and animations using 3D software. I specialise in hard-surface modeling, scene composition, texturing and animation. These models and scenes can be used as assets on websites. I have experience coding interactive 3D scenes for the web and completing commissions for clients. My 3D work has also been produced in print.",
         "images": ["/images/3d/full-scene-test-4e.jpg", "/images/3d/full-scene-test-5e.jpg", "/images/3d/image-100.jpg", "/images/3d/image-102.jpg", "/images/3d/image-104.jpg", "/images/3d/image-106.jpg", "/images/3d/image-108.jpg"],
         "buttons": [] 
-    },
-    {
-        "title": "Visual Art",
-        "text": "My art practice sits at the intersection of traditional art practices and digital technology. My paintings have been exhibited internationally.",
-        "images": ["/images/art/MOM_ICT_ARTXIV-1.jpg", "/images/art/(insta-compressed)-Deep-in-a-Dream-acrylic-paint-on-canvas-127x92cm.jpg", "/images/art/Abstract-Compression-XIX-acrylic-paint-on-custom-shaped-mdf-board-e.jpg", "/images/art/IMG_0316e.jpg", "/images/art/IMG_0638ecec.jpg", "/images/art/Myles-Berkouwer_Billy_Abstract_Compression_XVIIIe.jpg"],
-        "buttons": [["Website", "https://www.billyberkouwer.com"]]  
     }
 ]
